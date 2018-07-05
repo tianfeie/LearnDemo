@@ -114,6 +114,7 @@
 				CE453DD820EB048500F8EE93 /* TFCameraViewController */,
 				CE453DD920EB048500F8EE93 /* TFCameraView */,
 				CE453DDA20EB048500F8EE93 /* TFCameraManager */,
+				CE453DDA20EB048500F8EE93 /* TFImagePicker */,
 			);
 			path = TFCameraPage;
 			sourceTree = "<group>";
@@ -139,12 +140,14 @@
 			sourceTree = "<group>";
 		};
 		CE453DDA20EB048500F8EE93 /* TFCameraManager */ = {
+		CE453DDA20EB048500F8EE93 /* TFImagePicker */ = {
 			isa = PBXGroup;
 			children = (
 				CE453DDB20EB1EC400F8EE93 /* TFImagePicker.h */,
 				CE453DDC20EB1EC400F8EE93 /* TFImagePicker.m */,
 			);
 			path = TFCameraManager;
+			path = TFImagePicker;
 			sourceTree = "<group>";
 		};
 		CE6C5CB3202DA6A80033B8EE = {
@@ -167,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA7084820CA684C001F093E /* Category */,
+				CE453DD720EB048500F8EE93 /* TFCameraPage */,
 				CE6C5CBF202DA6A80033B8EE /* AppDelegate.h */,
 				CE6C5CC0202DA6A80033B8EE /* AppDelegate.m */,
 				CE6C5CC2202DA6A80033B8EE /* ViewController.h */,

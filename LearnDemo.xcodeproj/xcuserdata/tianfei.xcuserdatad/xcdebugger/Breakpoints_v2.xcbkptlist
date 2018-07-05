@@ -225,38 +225,6 @@
             endingLineNumber = "52"
             landmarkName = "-imagePickerControllerDidCancel:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[TFImagePicker imagePickerControllerDidCancel:]"
-                  moduleName = "LearnDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tianfei/Desktop/LearnDemo/LearnDemo/TFCameraPage/TFCameraManager/TFImagePicker.m"
-                  timestampString = "552465010.5059381"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "51">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__48-[TFImagePicker imagePickerControllerDidCancel:]_block_invoke"
-                  moduleName = "LearnDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tianfei/Desktop/LearnDemo/LearnDemo/TFCameraPage/TFCameraManager/TFImagePicker.m"
-                  timestampString = "552465010.5091079"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -303,6 +303,7 @@
         [controller removeFromParentViewController];
         [self.session stopRunning];
     }];
+    [self saveImageToPhotoAlbum:croppedImage];
     if (self.delegate) {
         [self.delegate cameraViewControllerDidFinished:croppedImage];
     }
