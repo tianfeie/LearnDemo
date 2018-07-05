@@ -19,7 +19,7 @@
 //当启动摄像头开始捕获输入
 @property(nonatomic)AVCaptureMetadataOutput *output;
 
-@property (nonatomic)AVCaptureStillImageOutput *ImageOutPut;
+@property (nonatomic)AVCaptureStillImageOutput *imageOutPut;
 
 //session：由他把输入输出结合在一起，并开始启动捕获设备（摄像头）
 @property(nonatomic)AVCaptureSession *session;
@@ -61,6 +61,8 @@
     [super viewWillDisappear:animated];
     
 }
+
+#pragma mark - 设置UI
 - (void)customUI{
     UIImageView *topBg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, TFSCREEN_WIDTH, 50)];
     topBg.backgroundColor = [UIColor blackColor];
@@ -119,6 +121,8 @@
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(focusGesture:)];
     [self.view addGestureRecognizer:tapGesture];
 }
+
+#pragma mark - 设置相机
 - (void)customCamera{
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -130,7 +134,7 @@
     
     //生成输出对象
     self.output = [[AVCaptureMetadataOutput alloc]init];
-    self.ImageOutPut = [[AVCaptureStillImageOutput alloc] init];
+    self.imageOutPut = [[AVCaptureStillImageOutput alloc] init];
     
     //生成会话，用来结合输入输出
     self.session = [[AVCaptureSession alloc]init];
@@ -143,8 +147,8 @@
         [self.session addInput:self.input];
     }
     
-    if ([self.session canAddOutput:self.ImageOutPut]) {
-        [self.session addOutput:self.ImageOutPut];
+    if ([self.session canAddOutput:self.imageOutPut]) {
+        [self.session addOutput:self.imageOutPut];
     }
     
     //使用self.session，初始化预览层，self.session负责驱动input进行信息的采集，layer负责把图像渲染显示
@@ -166,6 +170,8 @@
         [_device unlockForConfiguration];
     }
 }
+
+#pragma mark - 闪光灯
 - (void)FlashOn{
     if ([_device lockForConfiguration:nil]) {
         if (_isflashOn) {
@@ -186,6 +192,8 @@
         [_device unlockForConfiguration];
     }
 }
+
+#pragma mark - 切换摄像头
 - (void)changeCamera{
     NSUInteger cameraCount = [[AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo] count];
     if (cameraCount > 1) {
@@ -274,7 +282,7 @@
 }
 #pragma mark - 截取照片
 - (void) shutterCamera{
-    AVCaptureConnection * videoConnection = [self.ImageOutPut connectionWithMediaType:AVMediaTypeVideo];
+    AVCaptureConnection * videoConnection = [self.imageOutPut connectionWithMediaType:AVMediaTypeVideo];
     if (!videoConnection) {
         
         NSLog(@"image size = %@",NSStringFromCGSize(self.image.size));
@@ -282,7 +290,7 @@
         return;
     }
     
-    [self.ImageOutPut captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
+    [self.imageOutPut captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
         if (imageDataSampleBuffer == NULL) {
             return;
         }
@@ -297,6 +305,8 @@
         [self.view addSubview:imageCropViewController.view];
     }];
 }
+
+#pragma mark - TFImageCropViewControllerDelegate
 - (void)imageCropViewController:(TFImageCropViewController *)controller didCropImage:(UIImage *)croppedImage{
     [self dismissViewControllerAnimated:YES completion:^{
         [controller.view removeFromSuperview];
@@ -308,18 +318,18 @@
         [self.delegate cameraViewControllerDidFinished:croppedImage];
     }
 }
+
 - (void)imageCropViewControllerDidCancelCrop:(TFImageCropViewController *)controller
 {
     [controller.view removeFromSuperview];
     [controller removeFromParentViewController];
     [self.session startRunning];
 }
+
 #pragma - 保存至相册
 - (void)saveImageToPhotoAlbum:(UIImage*)savedImage
 {
-    
     UIImageWriteToSavedPhotosAlbum(savedImage, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
-    
 }
 // 指定回调方法
 

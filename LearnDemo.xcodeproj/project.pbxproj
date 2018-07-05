@@ -429,7 +429,7 @@
 				INFOPLIST_FILE = LearnDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yitong.LearnDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yitong.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ea7ea0e7-a833-40d3-93ee-c47e1cad4a04";
 				PROVISIONING_PROFILE_SPECIFIER = YTEnterpriseDist2018;
@@ -448,7 +448,7 @@
 				INFOPLIST_FILE = LearnDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yitong.LearnDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yitong.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ea7ea0e7-a833-40d3-93ee-c47e1cad4a04";
 				PROVISIONING_PROFILE_SPECIFIER = YTEnterpriseDist2018;
