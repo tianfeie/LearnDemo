@@ -50,16 +50,14 @@
         return;
     }
 }
+
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
+
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.session startRunning];
-}
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    
 }
 
 #pragma mark - 设置UI
@@ -278,8 +276,8 @@
             }];
         }];
     }
-    
 }
+
 #pragma mark - 截取照片
 - (void) shutterCamera{
     AVCaptureConnection * videoConnection = [self.imageOutPut connectionWithMediaType:AVMediaTypeVideo];
@@ -349,6 +347,7 @@
         [self.delegate cameraDidFinishedDidCancel];
     }
 }
+
 #pragma mark - 检查相机权限
 - (BOOL)canUserCamear{
     AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
@@ -382,10 +381,7 @@
         return YES;
     }
     return YES;
-    
-    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
