@@ -201,13 +201,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearnDemo/ViewController.m"
-            timestampString = "552465495.262877"
+            filePath = "LearnDemo/TFCameraPage/TFCameraManager/TFImagePicker.m"
+            timestampString = "552465495.2632051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "-imagePickerDidCancel"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-imagePickerControllerDidCancel:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -217,13 +217,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearnDemo/TFCameraPage/TFCameraManager/TFImagePicker.m"
-            timestampString = "552465495.2632051"
+            filePath = "LearnDemo/HRPayTextField/HRPayTextField.m"
+            timestampString = "553077770.407908"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "-imagePickerControllerDidCancel:"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "-textFieldDidEndEditing:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

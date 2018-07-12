@@ -28,6 +28,10 @@
 		CE6C5CC7202DA6A80033B8EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6C5CC5202DA6A80033B8EE /* Main.storyboard */; };
 		CE6C5CC9202DA6A80033B8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6C5CC8202DA6A80033B8EE /* Assets.xcassets */; };
 		CE6C5CCC202DA6A80033B8EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6C5CCA202DA6A80033B8EE /* LaunchScreen.storyboard */; };
+		CE791ECF20F6F18F00ED8773 /* CKKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = CE791ECE20F6F18F00ED8773 /* CKKeyboard.m */; };
+		CE791ED220F6F94C00ED8773 /* HRPayTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CE791ED120F6F94C00ED8773 /* HRPayTextField.m */; };
+		CE791ED820F7496300ED8773 /* TFRootCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE791ED720F7496300ED8773 /* TFRootCameraViewController.m */; };
+		CE791EDB20F74C9100ED8773 /* TFPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE791EDA20F74C9100ED8773 /* TFPayViewController.m */; };
 		CEA7085D20CA684C001F093E /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7084E20CA684C001F093E /* UIImage+Utils.m */; };
 		CEA7085E20CA684C001F093E /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7085020CA684C001F093E /* NSString+Utils.m */; };
 		CEA7085F20CA684C001F093E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7085120CA684C001F093E /* UIView+Extension.m */; };
@@ -67,6 +71,14 @@
 		CE6C5CCB202DA6A80033B8EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE6C5CCD202DA6A90033B8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE6C5CCE202DA6A90033B8EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE791ECD20F6F18F00ED8773 /* CKKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKKeyboard.h; sourceTree = "<group>"; };
+		CE791ECE20F6F18F00ED8773 /* CKKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKKeyboard.m; sourceTree = "<group>"; };
+		CE791ED020F6F94C00ED8773 /* HRPayTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRPayTextField.h; sourceTree = "<group>"; };
+		CE791ED120F6F94C00ED8773 /* HRPayTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRPayTextField.m; sourceTree = "<group>"; };
+		CE791ED620F7496300ED8773 /* TFRootCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFRootCameraViewController.h; sourceTree = "<group>"; };
+		CE791ED720F7496300ED8773 /* TFRootCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFRootCameraViewController.m; sourceTree = "<group>"; };
+		CE791ED920F74C9100ED8773 /* TFPayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFPayViewController.h; sourceTree = "<group>"; };
+		CE791EDA20F74C9100ED8773 /* TFPayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFPayViewController.m; sourceTree = "<group>"; };
 		CE9E2D10203FC0D100DD317A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CEA7084920CA684C001F093E /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
 		CEA7084B20CA684C001F093E /* UIImage+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
@@ -114,6 +126,8 @@
 				CE453DD820EB048500F8EE93 /* TFCameraViewController */,
 				CE453DD920EB048500F8EE93 /* TFCameraView */,
 				CE453DDA20EB048500F8EE93 /* TFImagePicker */,
+				CE791ED620F7496300ED8773 /* TFRootCameraViewController.h */,
+				CE791ED720F7496300ED8773 /* TFRootCameraViewController.m */,
 			);
 			path = TFCameraPage;
 			sourceTree = "<group>";
@@ -166,8 +180,10 @@
 		CE6C5CBE202DA6A80033B8EE /* LearnDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CE791ECC20F6F18F00ED8773 /* SecurityKeyBoard */,
 				CEA7084820CA684C001F093E /* Category */,
 				CE453DD720EB048500F8EE93 /* TFCameraPage */,
+				CE791ED320F72DE900ED8773 /* HRPayTextFieldPage */,
 				CE6C5CBF202DA6A80033B8EE /* AppDelegate.h */,
 				CE6C5CC0202DA6A80033B8EE /* AppDelegate.m */,
 				CE6C5CC2202DA6A80033B8EE /* ViewController.h */,
@@ -180,6 +196,26 @@
 				CE9E2D10203FC0D100DD317A /* PrefixHeader.pch */,
 			);
 			path = LearnDemo;
+			sourceTree = "<group>";
+		};
+		CE791ECC20F6F18F00ED8773 /* SecurityKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				CE791ECD20F6F18F00ED8773 /* CKKeyboard.h */,
+				CE791ECE20F6F18F00ED8773 /* CKKeyboard.m */,
+			);
+			path = SecurityKeyBoard;
+			sourceTree = "<group>";
+		};
+		CE791ED320F72DE900ED8773 /* HRPayTextFieldPage */ = {
+			isa = PBXGroup;
+			children = (
+				CE791ED020F6F94C00ED8773 /* HRPayTextField.h */,
+				CE791ED120F6F94C00ED8773 /* HRPayTextField.m */,
+				CE791ED920F74C9100ED8773 /* TFPayViewController.h */,
+				CE791EDA20F74C9100ED8773 /* TFPayViewController.m */,
+			);
+			path = HRPayTextFieldPage;
 			sourceTree = "<group>";
 		};
 		CEA7084820CA684C001F093E /* Category */ = {
@@ -279,12 +315,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE791ED220F6F94C00ED8773 /* HRPayTextField.m in Sources */,
 				CE453DDD20EB1EC400F8EE93 /* TFImagePicker.m in Sources */,
 				CE0797BA20805C2E001D02C3 /* main.m in Sources */,
 				CEA7085E20CA684C001F093E /* NSString+Utils.m in Sources */,
 				CE453DE020EB554400F8EE93 /* TFCameraViewController.m in Sources */,
 				CEEF0D2B20745A3B00B422F2 /* AppDelegate.m in Sources */,
+				CE791ECF20F6F18F00ED8773 /* CKKeyboard.m in Sources */,
+				CE791ED820F7496300ED8773 /* TFRootCameraViewController.m in Sources */,
 				CEA7085F20CA684C001F093E /* UIView+Extension.m in Sources */,
+				CE791EDB20F74C9100ED8773 /* TFPayViewController.m in Sources */,
 				CE453DE320EB5CED00F8EE93 /* TFImageCropViewController.m in Sources */,
 				CE453DD620EA253200F8EE93 /* TFImageScrollView.m in Sources */,
 				CEEF0D2C20745A3B00B422F2 /* ViewController.m in Sources */,

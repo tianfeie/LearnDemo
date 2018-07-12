@@ -7,85 +7,66 @@
 //
 
 #import "ViewController.h"
-#import "TFImagePicker.h"
-#import "UIImage+Utils.h"
-@interface ViewController ()<TFImagePickerDelegate>
-@property (nonatomic, strong) UIImageView *imageView;
-@property (nonatomic, strong) TFImagePicker *imagePicker;
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *dataSource;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initSubViews];
-}
-- (void)initSubViews{
-    [self.view addSubview:self.imageView];
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setTitle:@"选择图片" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(showSheetView)
-     forControlEvents:UIControlEventTouchUpInside];
-    button.backgroundColor = [UIColor grayColor];
-    button.frame = CGRectMake((TFSCREEN_WIDTH - 200)*0.5, self.imageView.bottom + 40 , 200, TF_TABBARBAR_HEIGHT - TF_IPHONE_HOME_HEIGHT);
-    [self.view addSubview:button];
-}
-- (TFImagePicker *)imagePicker{
-    if (!_imagePicker) {
-        _imagePicker = [[TFImagePicker alloc] init];
-        _imagePicker.delegate = self;
+    self.dataSource = @[@{@"title":@"自定义相机",@"ViewController":@"TFRootCameraViewController"},@{@"title":@"支付密码框",@"ViewController":@"TFPayViewController"}];
+    [self.view addSubview:self.tableView];
+    if (@available(iOS 11.0, *)) {
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;//UIScrollView也适用
+    }else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    return _imagePicker;
 }
-- (UIImageView *)imageView{
-    if (!_imageView) {
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, TF_NAVIGATIONBAR_HEIGHT + 10, TFSCREEN_WIDTH -20, TFSCREEN_WIDTH -20)];
-        _imageView.contentMode = UIViewContentModeScaleAspectFit;
-        _imageView.layer.borderWidth = 0.5;
-        _imageView.layer.borderColor = [UIColor orangeColor].CGColor;
-        UIImage *image = [[UIImage imageNamed:@"tf_default.jpg"] cropCircleImage];
-        _imageView.image = image;
+
+- (UITableView *)tableView
+{
+    if (_tableView == nil) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, TF_NAVIGATIONBAR_HEIGHT,TFSCREEN_WIDTH,TFSCREEN_HEIGHT - TF_NAVIGATIONBAR_HEIGHT - TF_IPHONE_HOME_HEIGHT) style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+//        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.showsVerticalScrollIndicator = YES;
+        _tableView.bounces = YES;
     }
-    return _imageView;
+    return _tableView;
 }
+#pragma mark -- TableViewDelegate TableViewDataSource
 
-#pragma mark - UIAlertController
-- (void)showSheetView{
-    TFWeakSelf;
-    //显示弹出框列表选择
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:nil
-                                                                   message:nil
-                                                            preferredStyle:UIAlertControllerStyleActionSheet];
-    
-    UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel
-                                                         handler:^(UIAlertAction * action) {
-                                                             //响应事件
-                                                             NSLog(@"action = %@", action);
-                                                         }];
-    UIAlertAction* deleteAction = [UIAlertAction actionWithTitle:@"相册" style:UIAlertActionStyleDefault
-                                                         handler:^(UIAlertAction * action) {
-                                                             //响应事件
-                                                             NSLog(@"action = %@", action);
-                                                             [weakSelf.imagePicker showOriginalImagePickerWithType:ImagePickerPhoto InViewController:self];
-                                                         }];
-    UIAlertAction* saveAction = [UIAlertAction actionWithTitle:@"拍照" style:UIAlertActionStyleDefault
-                                                       handler:^(UIAlertAction * action) {
-                                                           //响应事件
-                                                           NSLog(@"action = %@", action);
-                                                           [weakSelf.imagePicker showOriginalImagePickerWithType:ImagePickerCamera InViewController:self];
-                                                       }];
-    [alert addAction:saveAction];
-    [alert addAction:cancelAction];
-    [alert addAction:deleteAction];
-    [self presentViewController:alert animated:YES completion:nil];
-
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
 }
-
-#pragma mark -
-- (void)imagePickerDidFinished:(UIImage *)editedImage{
-    self.imageView.image = editedImage;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataSource.count;
 }
-- (void)imagePickerDidCancel{
-    NSLog(@"取消使用图片");
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSInteger row = indexPath.row;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCellID"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCellID"];
+    }
+    NSDictionary *dict = self.dataSource[row];
+    cell.textLabel.text = dict[@"title"];
+    return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *dict = self.dataSource[indexPath.row];
+    UIViewController *vc = [[NSClassFromString(dict[@"ViewController"]) alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end
