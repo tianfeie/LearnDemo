@@ -710,7 +710,7 @@ static inline int random_int(int low, int high) {
             UITextField *tmp = (UITextField *)self.inputSource;
             
             if (tmp.delegate && [tmp.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
-                NSRange range = NSMakeRange(tmp.text.length, 1);
+                NSRange range = NSMakeRange(tmp.text.length, 0);
                 BOOL ret = [tmp.delegate textField:tmp shouldChangeCharactersInRange:range replacementString:title];
                 if (ret) {
                     [tmp insertText:title];
@@ -723,7 +723,7 @@ static inline int random_int(int low, int high) {
             UITextView *tmp = (UITextView *)self.inputSource;
             
             if (tmp.delegate && [tmp.delegate respondsToSelector:@selector(textView:shouldChangeTextInRange:replacementText:)]) {
-                NSRange range = NSMakeRange(tmp.text.length, 1);
+                NSRange range = NSMakeRange(tmp.text.length, 0);
                 BOOL ret = [tmp.delegate textView:tmp shouldChangeTextInRange:range replacementText:title];
                 if (ret) {
                     [tmp insertText:title];
@@ -738,7 +738,7 @@ static inline int random_int(int low, int high) {
             [info appendString:title];
             
             if (tmp.delegate && [tmp.delegate respondsToSelector:@selector(searchBar:shouldChangeTextInRange:replacementText:)]) {
-                NSRange range = NSMakeRange(tmp.text.length, 1);
+                NSRange range = NSMakeRange(tmp.text.length, 0);
                 BOOL ret = [tmp.delegate searchBar:tmp shouldChangeTextInRange:range replacementText:title];
                 if (ret) {
                     [tmp setText:[info copy]];
@@ -757,7 +757,7 @@ static inline int random_int(int low, int high) {
             UITextField *tmp = (UITextField *)self.inputSource;
             
             if (tmp.delegate && [tmp.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
-                NSRange range = NSMakeRange(tmp.text.length, 1);
+                NSRange range = NSMakeRange(tmp.text.length, 0);
                 BOOL ret = [tmp.delegate textField:tmp shouldChangeCharactersInRange:range replacementString:title];
                 if (ret) {
                     [tmp insertText:title];
@@ -770,7 +770,7 @@ static inline int random_int(int low, int high) {
             UITextView *tmp = (UITextView *)self.inputSource;
             
             if (tmp.delegate && [tmp.delegate respondsToSelector:@selector(textView:shouldChangeTextInRange:replacementText:)]) {
-                NSRange range = NSMakeRange(tmp.text.length, 1);
+                NSRange range = NSMakeRange(tmp.text.length, 0);
                 BOOL ret = [tmp.delegate textView:tmp shouldChangeTextInRange:range replacementText:title];
                 if (ret) {
                     [tmp insertText:title];
@@ -785,7 +785,7 @@ static inline int random_int(int low, int high) {
             [info appendString:title];
             
             if (tmp.delegate && [tmp.delegate respondsToSelector:@selector(searchBar:shouldChangeTextInRange:replacementText:)]) {
-                NSRange range = NSMakeRange(tmp.text.length, 1);
+                NSRange range = NSMakeRange(tmp.text.length, 0);
                 BOOL ret = [tmp.delegate searchBar:tmp shouldChangeTextInRange:range replacementText:title];
                 if (ret) {
                     [tmp setText:[info copy]];
@@ -801,19 +801,19 @@ static inline int random_int(int low, int high) {
     if (self.inputSource) {
         if ([self.inputSource isKindOfClass:[UITextField class]]) {
             UITextField *tmp = (UITextField *)self.inputSource;
-            [tmp deleteBackward];
-            //            NSString *tmpInfo = tmp.text;
-            //            if (tmpInfo.length > 0) {
-            //                if (tmp.delegate && [tmp.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
-            //                    NSRange range = NSMakeRange(tmpInfo.length-1, 1);
-            //                    BOOL ret = [tmp.delegate textField:tmp shouldChangeCharactersInRange:range replacementString:tmpInfo];
-            //                    if (ret) {
-            //                        [tmp deleteBackward];
-            //                    }
-            //                }else{
-            //                    [tmp deleteBackward];
-            //                }
-            //            }
+//            [tmp deleteBackward];
+            NSString *tmpInfo = tmp.text;
+                        if (tmpInfo.length > 0) {
+                            if (tmp.delegate && [tmp.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
+                                NSRange range = NSMakeRange(tmpInfo.length-1, 0);
+                                BOOL ret = [tmp.delegate textField:tmp shouldChangeCharactersInRange:range replacementString:@""];
+                                if (ret) {
+                                    [tmp deleteBackward];
+                                }
+                            }else{
+                                [tmp deleteBackward];
+                            }
+                        }
             
         }else if ([self.inputSource isKindOfClass:[UITextView class]]){
             UITextView *tmp = (UITextView *)self.inputSource;

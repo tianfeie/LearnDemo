@@ -7,6 +7,8 @@
 //
 
 #import "HRPayTextField.h"
+#import "CKKeyboard.h"
+
 @interface HRPayContentTextField : UITextField
 @end
 @implementation HRPayContentTextField
@@ -52,13 +54,35 @@
         [self addSubview:button1];
     }
     self.textField = [[HRPayContentTextField alloc] initWithFrame:self.bounds];
-    self.textField.tintColor= [UIColor clearColor];
+    self.textField.tintColor = [UIColor clearColor];
     self.textField.textColor = [UIColor clearColor];
+    self.textField.keyboardType = UIKeyboardTypeNumberPad;
     self.textField.delegate = self;
+    // 设置安全输入键盘
+//    CKKeyboard *safeKB = [[CKKeyboard alloc] initWithType:CKBTypeASCIICapable];
+//    self.textField.inputView = safeKB;
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldChangeValue) name:UITextFieldTextDidChangeNotification object:nil];
+//    safeKB.inputSource = self.textField;
     [self addSubview:self.textField];
 }
+
+//- (void)textFieldChangeValue{
+//    if (self.textField.text.length>6) {
+//        self.textField.text = [self.textField.text substringToIndex:6];
+//        return;
+//    }
+//    for (int i = 0; i< 6; i++) {
+//        UIButton *button = [self viewWithTag:1000 + i];
+//        if (button) {
+//            if (i>=self.textField.text.length) {
+//                [button setTitle:@"" forState:UIControlStateNormal];
+//            }else{
+//                [button setTitle:@"●" forState:UIControlStateNormal];
+//            }
+//        }
+//    }
+//}
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    
     NSString *toBeString = [textField.text stringByReplacingCharactersInRange:range withString:string];
     if (toBeString.length>6) {
         return NO;
@@ -71,8 +95,6 @@
         }else{
             [button setTitle:@"●" forState:UIControlStateNormal];
         }
-       
-        
     }
     return YES;
 }
