@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.payTextField = [[HRPayTextField alloc] initWithFrame:CGRectMake(20, 80, TFSCREEN_WIDTH - 40, 50)];
+    self.payTextField = [[HRPayTextField alloc] initWithFrame:CGRectMake(20, 80, HRSCREEN_WIDTH - 40, 50)];
     self.payTextField.delegate = self;
     [self.view addSubview:self.payTextField];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -26,7 +26,7 @@
     [button addTarget:self action:@selector(clearPassWord)
      forControlEvents:UIControlEventTouchUpInside];
     button.backgroundColor = [UIColor grayColor];
-    button.frame = CGRectMake((TFSCREEN_WIDTH - 200)*0.5, self.self.payTextField.bottom + 40 , 200, 45);
+    button.frame = CGRectMake((HRSCREEN_WIDTH - 200)*0.5, self.self.payTextField.bottom + 40 , 200, 45);
     [self.view addSubview:button];
 }
 

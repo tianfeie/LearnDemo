@@ -45,7 +45,7 @@
         CGFloat y = 0;
         UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
         [button1 setTitle:@"" forState:UIControlStateNormal];
-        [button1 setTitleColor:TFColorFromRGB(0x333333) forState:UIControlStateNormal];
+        [button1 setTitleColor:HRColorFromRGB(0x333333) forState:UIControlStateNormal];
         button1.userInteractionEnabled =  NO;
         button1.frame = CGRectMake(x,y,w,h);
         button1.tag = 1000 + i;

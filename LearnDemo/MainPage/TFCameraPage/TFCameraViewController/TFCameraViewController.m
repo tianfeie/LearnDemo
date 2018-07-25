@@ -62,11 +62,11 @@
 
 #pragma mark - 设置UI
 - (void)customUI{
-    UIImageView *topBg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, TFSCREEN_WIDTH, 50)];
+    UIImageView *topBg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, HRSCREEN_WIDTH, 50)];
     topBg.backgroundColor = [UIColor blackColor];
     topBg.alpha = 0.7;
     [self.view addSubview:topBg];
-    UIImageView *bottomBg = [[UIImageView alloc] initWithFrame:CGRectMake(0, TFSCREEN_HEIGHT - 140, TFSCREEN_WIDTH, 140)];
+    UIImageView *bottomBg = [[UIImageView alloc] initWithFrame:CGRectMake(0, HRSCREEN_HEIGHT - 140, HRSCREEN_WIDTH, 140)];
     bottomBg.backgroundColor = [UIColor blackColor];
     bottomBg.alpha = 0.7;
     [self.view addSubview:bottomBg];
@@ -74,12 +74,12 @@
     UILabel *photoLb = [[UILabel alloc] initWithFrame:CGRectMake(0, bottomBg.top + 17, self.view.width, 18)];
     photoLb.text = @"照片";
     photoLb.textColor = [UIColor whiteColor];
-    photoLb.font = TFSysFontOfSize(13);
+    photoLb.font = HRSysFontOfSize(13);
     photoLb.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:photoLb];
     
     _PhotoButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _PhotoButton.frame = CGRectMake(TFSCREEN_WIDTH*1/2.0-30, TFSCREEN_HEIGHT-90, 60, 60);
+    _PhotoButton.frame = CGRectMake(HRSCREEN_WIDTH*1/2.0-30, HRSCREEN_HEIGHT-90, 60, 60);
     [_PhotoButton setImage:[UIImage imageNamed:@"photograph"] forState: UIControlStateNormal];
     //    [_PhotoButton setImage:[UIImage imageNamed:@"photograph_Select"] forState:UIControlStateNormal];
     [_PhotoButton addTarget:self action:@selector(shutterCamera) forControlEvents:UIControlEventTouchUpInside];
@@ -91,7 +91,7 @@
     _focusView.hidden = YES;
     
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    leftButton.frame = CGRectMake(25, TFSCREEN_HEIGHT- 54, 52, 52);
+    leftButton.frame = CGRectMake(25, HRSCREEN_HEIGHT- 54, 52, 52);
     leftButton.centerY = _PhotoButton.centerY;
     
     [leftButton setTitle:@"取消" forState:UIControlStateNormal];
@@ -100,7 +100,7 @@
     [self.view addSubview:leftButton];
     
     UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    rightButton.frame = CGRectMake(TFSCREEN_WIDTH - 80, TFSCREEN_HEIGHT-100, 60, 60);
+    rightButton.frame = CGRectMake(HRSCREEN_WIDTH - 80, HRSCREEN_HEIGHT-100, 60, 60);
     rightButton.imageEdgeInsets = UIEdgeInsetsMake(17.5, 15, 17.5, 15);
     [rightButton setImage:[UIImage imageNamed:@"changeCamera"] forState:UIControlStateNormal];
     rightButton.titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -151,7 +151,7 @@
     
     //使用self.session，初始化预览层，self.session负责驱动input进行信息的采集，layer负责把图像渲染显示
     self.previewLayer = [[AVCaptureVideoPreviewLayer alloc]initWithSession:self.session];
-    self.previewLayer.frame = CGRectMake(0, 0, TFSCREEN_WIDTH, TFSCREEN_HEIGHT);
+    self.previewLayer.frame = CGRectMake(0, 0, HRSCREEN_WIDTH, HRSCREEN_HEIGHT);
     self.previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
     [self.view.layer addSublayer:self.previewLayer];
     

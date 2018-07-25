@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearnDemo/UploadImageVIew/WPhoto/WPFunctionView.m"
-            timestampString = "541300060.161827"
+            filePath = "LearnDemo/MainPage/RootTabbarViewController/LYRootTababarViewController.m"
+            timestampString = "554175024.3442169"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "+finishChoosePhotos:chooseArray:"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "-tabBar:didSelectIndex:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearnDemo/UploadImageVIew/WPhoto/WPFunctionView.m"
-            timestampString = "541300060.162166"
+            filePath = "LearnDemo/MainPage/RootTabbarViewController/LYRootTababarViewController.m"
+            timestampString = "554175024.344849"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "+finishChoosePhotos:chooseArray:"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "-setTabbarIndex:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearnDemo/GestureViewController/GestureViewController.m"
-            timestampString = "544495515.731075"
+            filePath = "LearnDemo/MainPage/RootTabbarViewController/LYTabbar/LYTabbar.m"
+            timestampString = "554174346.065909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "231"
-            endingLineNumber = "231"
-            landmarkName = "-lockView:endSetting:"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "-setSelectedIndex:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearnDemo/GestureViewController/GestureViewController.m"
-            timestampString = "544495515.731407"
+            filePath = "LearnDemo/MainPage/RootTabbarViewController/LYTabbar/LYTabbar.m"
+            timestampString = "554174346.0661269"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "233"
-            endingLineNumber = "233"
-            landmarkName = "-lockView:endSetting:"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "-layoutSubviews"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,13 +73,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearnDemo/GestureViewController/GestureViewController.m"
-            timestampString = "544495515.731681"
+            filePath = "LearnDemo/MainPage/RootTabbarViewController/HRRootTababarViewController.m"
+            timestampString = "554179652.72069"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "247"
-            endingLineNumber = "247"
-            landmarkName = "-lockView:endVerify:"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "-tabBar:didSelectIndex:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -89,13 +89,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearnDemo/GestureViewController/GestureViewController.m"
-            timestampString = "544495515.731901"
+            filePath = "LearnDemo/MainPage/RootTabbarViewController/HRRootTababarViewController.m"
+            timestampString = "554179652.721024"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "242"
-            endingLineNumber = "242"
-            landmarkName = "-lockView:endVerify:"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "-setTabbarIndex:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,13 +105,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearnDemo/GestureViewController/GestureViewController.m"
-            timestampString = "544495515.732116"
+            filePath = "LearnDemo/MainPage/RootTabbarViewController/HRTabbar/HRTabbar.m"
+            timestampString = "554179652.721086"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "261"
-            endingLineNumber = "261"
-            landmarkName = "-gestureLoginRequest"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "-setSelectedIndex:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -121,109 +121,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearnDemo/TFCameraPage/TFCameraManager/TFCameraManager.m"
-            timestampString = "552453588.770277"
+            filePath = "LearnDemo/MainPage/RootTabbarViewController/HRTabbar/HRTabbar.m"
+            timestampString = "554179652.721642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "-imageCropViewController:didCropImage:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LearnDemo/TFCameraPage/TFCameraManager/TFImagePicker.m"
-            timestampString = "552465495.262664"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "-cameraViewControllerDidFinished:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LearnDemo/TFCameraPage/TFCameraManager/TFImagePicker.m"
-            timestampString = "552465495.262736"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "-cameraDidFinishedDidCancel"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LearnDemo/TFCameraPage/TFCameraManager/TFImagePicker.m"
-            timestampString = "552465495.262787"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "-imageCropViewControllerDidCancelCrop:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LearnDemo/TFCameraPage/TFCameraManager/TFImagePicker.m"
-            timestampString = "552465495.262831"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "-imageCropViewController:didCropImage:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LearnDemo/TFCameraPage/TFCameraManager/TFImagePicker.m"
-            timestampString = "552465495.2632051"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "-imagePickerControllerDidCancel:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LearnDemo/HRPayTextField/HRPayTextField.m"
-            timestampString = "553077770.407908"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "-textFieldDidEndEditing:"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "-itemViewPressed:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

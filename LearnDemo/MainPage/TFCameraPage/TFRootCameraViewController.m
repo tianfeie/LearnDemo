@@ -35,7 +35,7 @@
     [button addTarget:self action:@selector(showSheetView)
      forControlEvents:UIControlEventTouchUpInside];
     button.backgroundColor = [UIColor grayColor];
-    button.frame = CGRectMake((TFSCREEN_WIDTH - 200)*0.5, self.imageView.bottom + 40 , 200, TF_TABBARBAR_HEIGHT - TF_IPHONE_HOME_HEIGHT);
+    button.frame = CGRectMake((HRSCREEN_WIDTH - 200)*0.5, self.imageView.bottom + 40 , 200, HR_TABBARBAR_HEIGHT - HR_IPHONE_HOME_HEIGHT);
     [self.view addSubview:button];
 }
 - (void)textHRPayFieldDidEndEditing:(UITextField *)textField{
@@ -50,7 +50,7 @@
 }
 - (UIImageView *)imageView{
     if (!_imageView) {
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, TF_NAVIGATIONBAR_HEIGHT + 10, TFSCREEN_WIDTH -20, TFSCREEN_WIDTH -20)];
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, HR_NAVIGATIONBAR_HEIGHT + 10, HRSCREEN_WIDTH -20, HRSCREEN_WIDTH -20)];
         _imageView.contentMode = UIViewContentModeScaleAspectFit;
         _imageView.layer.borderWidth = 0.5;
         _imageView.layer.borderColor = [UIColor orangeColor].CGColor;
@@ -63,7 +63,7 @@
 #pragma mark - UIAlertController
 - (void)showSheetView{
     
-    TFWeakSelf;
+    HRWeakSelf;
     //显示弹出框列表选择
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:nil
                                                                    message:nil

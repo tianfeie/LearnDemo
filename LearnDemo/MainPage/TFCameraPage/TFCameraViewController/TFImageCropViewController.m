@@ -108,8 +108,8 @@
 
 - (UIView *)bottomView{
     if (!_bottomView) {
-        _bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, TFSCREEN_HEIGHT - TF_TABBARBAR_HEIGHT, TFSCREEN_WIDTH, TF_TABBARBAR_HEIGHT)];
-        _bottomView.backgroundColor = TFColorFromRGBA(0x000000, 0.7);
+        _bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, HRSCREEN_HEIGHT - HR_TABBARBAR_HEIGHT, HRSCREEN_WIDTH, HR_TABBARBAR_HEIGHT)];
+        _bottomView.backgroundColor = HRColorFromRGBA(0x000000, 0.7);
     }
     return _bottomView;
 }

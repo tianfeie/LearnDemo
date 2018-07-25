@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HRRootTababarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -15,6 +16,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    HRRootTababarViewController *tabbar = [[HRRootTababarViewController alloc] init];
+    self.window.rootViewController = tabbar;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
