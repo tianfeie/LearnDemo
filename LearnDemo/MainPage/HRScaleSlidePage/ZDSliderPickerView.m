@@ -205,7 +205,10 @@
         textField.text = [NSString stringWithFormat:@"%.0f",_maxValue];
     }
     CGFloat value = [textField.text floatValue];
-    [_scrollView setContentOffset:CGPointMake(floorf(value) / SpaceValue * SpaceDistance, 0)];
+    [UIView animateWithDuration:0.2 animations:^{
+        
+        [_scrollView setContentOffset:CGPointMake(floorf(value) / SpaceValue * SpaceDistance, 0)];
+    }];
     _pointerText = [NSString stringWithFormat:@"%.0f",floorf(value)];
     if (self.Completion){
         self.Completion(_pointerText);

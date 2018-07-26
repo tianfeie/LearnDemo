@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSource = @[@{@"title":@"自定义相机",@"ViewController":@"TFRootCameraViewController"},@{@"title":@"支付密码框",@"ViewController":@"TFPayViewController"},@{@"title":@"刻度尺",@"ViewController":@"HRScaleSlideViewController"},@{@"title":@"二级页面",@"ViewController":@"HomeSubViewController"}];
+    self.dataSource = @[@{@"title":@"自定义相机",@"ViewController":@"TFRootCameraViewController",@"modalType":@"push"},@{@"title":@"支付密码框",@"ViewController":@"TFPayViewController",@"modalType":@"push"},@{@"title":@"刻度尺",@"ViewController":@"HRScaleSlideViewController",@"modalType":@"push"},@{@"title":@"二级页面",@"ViewController":@"HomeSubViewController",@"modalType":@"present"}];
     [self.view addSubview:self.tableView];
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;//UIScrollView也适用
@@ -68,8 +68,19 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSDictionary *dict = self.dataSource[indexPath.row];
-    UIViewController *vc = [[NSClassFromString(dict[@"ViewController"]) alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    [self jumpVC:dict];
 }
 
+- (void)jumpVC:(NSDictionary *)param{
+    
+    UIViewController *vc = [[NSClassFromString(param[@"ViewController"]) alloc] init];
+    NSString *modalType = param[@"modalType"];
+    if ([modalType isEqualToString:@"push"]) {
+        [self.navigationController pushViewController:vc animated:YES];
+    }else{
+        [self presentViewController:vc animated:YES completion:nil];
+    }
+//
+    
+}
 @end

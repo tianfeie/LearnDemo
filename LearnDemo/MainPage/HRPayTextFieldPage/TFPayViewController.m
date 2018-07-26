@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.payTextField = [[HRPayTextField alloc] initWithFrame:CGRectMake(20, 80, HRSCREEN_WIDTH - 40, 50)];
+    self.payTextField = [[HRPayTextField alloc] initWithFrame:CGRectMake(20, HR_NAVIGATIONBAR_HEIGHT +20, HRSCREEN_WIDTH - 40, 50)];
     self.payTextField.delegate = self;
     [self.view addSubview:self.payTextField];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];

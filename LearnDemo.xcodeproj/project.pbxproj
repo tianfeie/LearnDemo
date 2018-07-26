@@ -336,10 +336,10 @@
 		CE35DB5F2105864800176A41 /* HRPayTextFieldPage */ = {
 			isa = PBXGroup;
 			children = (
-				CE35DB602105864800176A41 /* TFPayViewController.m */,
-				CE35DB612105864800176A41 /* HRPayTextField.m */,
 				CE35DB622105864800176A41 /* TFPayViewController.h */,
+				CE35DB602105864800176A41 /* TFPayViewController.m */,
 				CE35DB632105864800176A41 /* HRPayTextField.h */,
+				CE35DB612105864800176A41 /* HRPayTextField.m */,
 			);
 			path = HRPayTextFieldPage;
 			sourceTree = "<group>";

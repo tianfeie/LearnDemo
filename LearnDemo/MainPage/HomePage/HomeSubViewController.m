@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor grayColor];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = self.view.bounds;
     [button addTarget:self action:@selector(doAction) forControlEvents:UIControlEventTouchUpInside];
@@ -39,7 +40,12 @@
     if ([rootVc isKindOfClass:[HRRootTababarViewController class]]) {
         HRRootTababarViewController *tabbarVC = (HRRootTababarViewController *)rootVc;
         tabbarVC.tabbarIndex = 3;
-        [self.navigationController popToRootViewControllerAnimated:YES];
+        
+        if ([rootVc presentedViewController]) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }else{
+            [self.navigationController popViewControllerAnimated:YES];
+        }
     }
 }
 - (void)didReceiveMemoryWarning {
