@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSource = @[@{@"title":@"自定义相机",@"ViewController":@"TFRootCameraViewController",@"modalType":@"push"},@{@"title":@"支付密码框",@"ViewController":@"TFPayViewController",@"modalType":@"push"},@{@"title":@"刻度尺",@"ViewController":@"HRScaleSlideViewController",@"modalType":@"push"},@{@"title":@"二级页面",@"ViewController":@"HomeSubViewController",@"modalType":@"present"}];
+    self.dataSource = @[@{@"title":@"自定义相机",@"ViewController":@"TFRootCameraViewController",@"modalType":@"push"},@{@"title":@"支付密码框",@"ViewController":@"TFPayViewController",@"modalType":@"push"},@{@"title":@"刻度尺",@"ViewController":@"HRScaleSlideViewController",@"modalType":@"push"},@{@"title":@"圆弧刻度盘",@"ViewController":@"HomeSubViewController",@"modalType":@"present"}];
     [self.view addSubview:self.tableView];
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;//UIScrollView也适用

@@ -10,8 +10,21 @@
 #define PrefixHeader_pch
 #import "UIView+Extension.h"
 #import "Masonry.h"
-/************************************ Size ********************************************/
 
+#define HRMainWordColor (HRColorFromRGB(0x333333))      // 主要文字颜色
+#define HRSubWordColor (HRColorFromRGB(0x666666))       // 次要文字颜色
+#define HRHintWordColor (HRColorFromRGB(0x999999))      // 提示文字颜色
+#define HRRedColor (HRColorFromRGB(0xe1393b))           // 内容中的红色
+#define HRBlueColor   (HRColorFromRGB(0x0075ff))          // 蓝色
+#define HROrangeColor   (HRColorFromRGB(0xec9107))      // 橙色
+
+#define HRSeparatorColor (HRColorFromRGB(0xeeeeee))     // 分割线颜色
+#define HRBackgroundColor (HRColorFromRGB(0xf5f5f5))    // 背景颜色
+
+#define HRHintInfoColor   (HRColorFromRGB(0xd4393a))    // 提示信息的红色
+#define HRShadowColor   (HRColorFromRGB(0xf0f0f0))      // 阴影颜色
+
+/************************************ Size ********************************************/
 #define HRSCREEN_WIDTH   ([UIScreen mainScreen].bounds.size.width)
 #define HRSCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 

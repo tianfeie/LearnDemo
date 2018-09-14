@@ -52,6 +52,12 @@
 		CE35DB9D2107287E00176A41 /* HomeSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DB9C2107287E00176A41 /* HomeSubViewController.m */; };
 		CE35DBA221072A7700176A41 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DBA121072A7700176A41 /* BaseViewController.m */; };
 		CE35DBA7210819D000176A41 /* HRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DBA6210819D000176A41 /* HRNavigationController.m */; };
+		CE35DBAC210967AC00176A41 /* HomeSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DBAB210967AC00176A41 /* HomeSubView.m */; };
+		CE47B5F621129B71006F9D5F /* UINavigationController+HRTranition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47B5F521129B71006F9D5F /* UINavigationController+HRTranition.m */; };
+		CE58C4D1211929BA00DC6F2D /* HRCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE58C4D0211929BA00DC6F2D /* HRCalendarViewController.m */; };
+		CE683C752138DF7D00CF6C57 /* HRCircularLoanBillsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683C742138DF7D00CF6C57 /* HRCircularLoanBillsDetailViewController.m */; };
+		CE683C782138DFD600CF6C57 /* HRCircularLoanBillDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683C772138DFD600CF6C57 /* HRCircularLoanBillDetailCell.m */; };
+		CE683C7C2138EC8B00CF6C57 /* HRCircularLoanBillsDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683C7B2138EC8B00CF6C57 /* HRCircularLoanBillsDetailModel.m */; };
 		CE6C5CC7202DA6A80033B8EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6C5CC5202DA6A80033B8EE /* Main.storyboard */; };
 		CE6C5CC9202DA6A80033B8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6C5CC8202DA6A80033B8EE /* Assets.xcassets */; };
 		CE6C5CCC202DA6A80033B8EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6C5CCA202DA6A80033B8EE /* LaunchScreen.storyboard */; };
@@ -139,6 +145,18 @@
 		CE35DBA121072A7700176A41 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		CE35DBA5210819D000176A41 /* HRNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRNavigationController.h; sourceTree = "<group>"; };
 		CE35DBA6210819D000176A41 /* HRNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRNavigationController.m; sourceTree = "<group>"; };
+		CE35DBAA210967AC00176A41 /* HomeSubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeSubView.h; sourceTree = "<group>"; };
+		CE35DBAB210967AC00176A41 /* HomeSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeSubView.m; sourceTree = "<group>"; };
+		CE47B5F421129B71006F9D5F /* UINavigationController+HRTranition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HRTranition.h"; sourceTree = "<group>"; };
+		CE47B5F521129B71006F9D5F /* UINavigationController+HRTranition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HRTranition.m"; sourceTree = "<group>"; };
+		CE58C4CF211929BA00DC6F2D /* HRCalendarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRCalendarViewController.h; sourceTree = "<group>"; };
+		CE58C4D0211929BA00DC6F2D /* HRCalendarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRCalendarViewController.m; sourceTree = "<group>"; };
+		CE683C732138DF7D00CF6C57 /* HRCircularLoanBillsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRCircularLoanBillsDetailViewController.h; sourceTree = "<group>"; };
+		CE683C742138DF7D00CF6C57 /* HRCircularLoanBillsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRCircularLoanBillsDetailViewController.m; sourceTree = "<group>"; };
+		CE683C762138DFD600CF6C57 /* HRCircularLoanBillDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRCircularLoanBillDetailCell.h; sourceTree = "<group>"; };
+		CE683C772138DFD600CF6C57 /* HRCircularLoanBillDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRCircularLoanBillDetailCell.m; sourceTree = "<group>"; };
+		CE683C7A2138EC8B00CF6C57 /* HRCircularLoanBillsDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRCircularLoanBillsDetailModel.h; sourceTree = "<group>"; };
+		CE683C7B2138EC8B00CF6C57 /* HRCircularLoanBillsDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRCircularLoanBillsDetailModel.m; sourceTree = "<group>"; };
 		CE6C5CBC202DA6A80033B8EE /* LearnDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6C5CC2202DA6A80033B8EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CE6C5CC3202DA6A80033B8EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -251,6 +269,8 @@
 		CE35DB3D2105864800176A41 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
+				CE683C702138DED600CF6C57 /* HRCircularLoanPage */,
+				CE58C4CE211929A000DC6F2D /* HRCalendarPage */,
 				CE35DB942107283900176A41 /* HomePage */,
 				CE35DB8B2105A82200176A41 /* RootTabbarViewController */,
 				CE35DB3E2105864800176A41 /* TFCameraPage */,
@@ -285,10 +305,10 @@
 		CE35DB422105864800176A41 /* TFCameraViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CE35DB432105864800176A41 /* TFImageCropViewController.m */,
-				CE35DB442105864800176A41 /* TFCameraViewController.m */,
 				CE35DB452105864800176A41 /* TFCameraViewController.h */,
+				CE35DB442105864800176A41 /* TFCameraViewController.m */,
 				CE35DB462105864800176A41 /* TFImageCropViewController.h */,
+				CE35DB432105864800176A41 /* TFImageCropViewController.m */,
 			);
 			path = TFCameraViewController;
 			sourceTree = "<group>";
@@ -325,9 +345,9 @@
 		CE35DB5A2105864800176A41 /* HRScaleSlidePage */ = {
 			isa = PBXGroup;
 			children = (
-				CE35DB5B2105864800176A41 /* HRScaleSlideViewController.h */,
 				CE35DB5C2105864800176A41 /* ZDSliderPickerView.h */,
 				CE35DB5D2105864800176A41 /* ZDSliderPickerView.m */,
+				CE35DB5B2105864800176A41 /* HRScaleSlideViewController.h */,
 				CE35DB5E2105864800176A41 /* HRScaleSlideViewController.m */,
 			);
 			path = HRScaleSlidePage;
@@ -370,6 +390,8 @@
 				CE35DB992107286900176A41 /* HomeViewController.m */,
 				CE35DB9B2107287E00176A41 /* HomeSubViewController.h */,
 				CE35DB9C2107287E00176A41 /* HomeSubViewController.m */,
+				CE35DBAA210967AC00176A41 /* HomeSubView.h */,
+				CE35DBAB210967AC00176A41 /* HomeSubView.m */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -377,6 +399,7 @@
 		CE35DB9E21072A4500176A41 /* SuperClass */ = {
 			isa = PBXGroup;
 			children = (
+				CE47B5ED21129A63006F9D5F /* HRTranition */,
 				CE35DBA4210819D000176A41 /* HRNavigationController */,
 				CE35DB9F21072A6D00176A41 /* BaseViewController */,
 			);
@@ -408,6 +431,85 @@
 			children = (
 			);
 			path = HRNavigationBar;
+			sourceTree = "<group>";
+		};
+		CE47B5ED21129A63006F9D5F /* HRTranition */ = {
+			isa = PBXGroup;
+			children = (
+				CE47B5F221129B71006F9D5F /* Animation */,
+				CE47B5F321129B71006F9D5F /* Category */,
+				CE47B5F121129B71006F9D5F /* Delegate */,
+			);
+			path = HRTranition;
+			sourceTree = "<group>";
+		};
+		CE47B5F121129B71006F9D5F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		CE47B5F221129B71006F9D5F /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		CE47B5F321129B71006F9D5F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CE47B5F421129B71006F9D5F /* UINavigationController+HRTranition.h */,
+				CE47B5F521129B71006F9D5F /* UINavigationController+HRTranition.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		CE58C4CE211929A000DC6F2D /* HRCalendarPage */ = {
+			isa = PBXGroup;
+			children = (
+				CE58C4CF211929BA00DC6F2D /* HRCalendarViewController.h */,
+				CE58C4D0211929BA00DC6F2D /* HRCalendarViewController.m */,
+			);
+			path = HRCalendarPage;
+			sourceTree = "<group>";
+		};
+		CE683C702138DED600CF6C57 /* HRCircularLoanPage */ = {
+			isa = PBXGroup;
+			children = (
+				CE683C792138EC7400CF6C57 /* Model */,
+				CE683C722138DF3100CF6C57 /* View */,
+				CE683C712138DF1100CF6C57 /* ViewController */,
+			);
+			path = HRCircularLoanPage;
+			sourceTree = "<group>";
+		};
+		CE683C712138DF1100CF6C57 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE683C732138DF7D00CF6C57 /* HRCircularLoanBillsDetailViewController.h */,
+				CE683C742138DF7D00CF6C57 /* HRCircularLoanBillsDetailViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE683C722138DF3100CF6C57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE683C762138DFD600CF6C57 /* HRCircularLoanBillDetailCell.h */,
+				CE683C772138DFD600CF6C57 /* HRCircularLoanBillDetailCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE683C792138EC7400CF6C57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE683C7A2138EC8B00CF6C57 /* HRCircularLoanBillsDetailModel.h */,
+				CE683C7B2138EC8B00CF6C57 /* HRCircularLoanBillsDetailModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CE6C5CB3202DA6A80033B8EE = {
@@ -534,8 +636,11 @@
 			files = (
 				CE35DB882105864800176A41 /* TFPayViewController.m in Sources */,
 				CE35DBA7210819D000176A41 /* HRNavigationController.m in Sources */,
+				CE47B5F621129B71006F9D5F /* UINavigationController+HRTranition.m in Sources */,
+				CE683C7C2138EC8B00CF6C57 /* HRCircularLoanBillsDetailModel.m in Sources */,
 				CE0797BA20805C2E001D02C3 /* main.m in Sources */,
 				CE35DB6C2105864800176A41 /* MASViewConstraint.m in Sources */,
+				CE683C752138DF7D00CF6C57 /* HRCircularLoanBillsDetailViewController.m in Sources */,
 				CEEF0D2C20745A3B00B422F2 /* ViewController.m in Sources */,
 				CE35DB892105864800176A41 /* HRPayTextField.m in Sources */,
 				CE35DB752105864800176A41 /* TFImageCropViewController.m in Sources */,
@@ -550,6 +655,7 @@
 				CE35DB872105864800176A41 /* HRScaleSlideViewController.m in Sources */,
 				CE35DB712105864800176A41 /* NSString+Utils.m in Sources */,
 				CE35DB8F2105A8A800176A41 /* HRRootTababarViewController.m in Sources */,
+				CE683C782138DFD600CF6C57 /* HRCircularLoanBillDetailCell.m in Sources */,
 				CE35DBA221072A7700176A41 /* BaseViewController.m in Sources */,
 				CE35DB6B2105864800176A41 /* MASConstraint.m in Sources */,
 				CE35DB782105864800176A41 /* TFRootCameraViewController.m in Sources */,
@@ -557,11 +663,13 @@
 				CE35DB692105864800176A41 /* NSArray+MASAdditions.m in Sources */,
 				CE35DB642105864800176A41 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				CE35DB6F2105864800176A41 /* CKKeyboard.m in Sources */,
+				CE35DBAC210967AC00176A41 /* HomeSubView.m in Sources */,
 				CE35DB862105864800176A41 /* ZDSliderPickerView.m in Sources */,
 				CE35DB772105864800176A41 /* TFImageScrollView.m in Sources */,
 				CE35DB662105864800176A41 /* MASCompositeConstraint.m in Sources */,
 				CE35DB672105864800176A41 /* MASConstraintMaker.m in Sources */,
 				CE35DB732105864800176A41 /* AppDelegate.m in Sources */,
+				CE58C4D1211929BA00DC6F2D /* HRCalendarViewController.m in Sources */,
 				CE35DB722105864800176A41 /* UIView+Extension.m in Sources */,
 				CE35DB6A2105864800176A41 /* View+MASAdditions.m in Sources */,
 			);
