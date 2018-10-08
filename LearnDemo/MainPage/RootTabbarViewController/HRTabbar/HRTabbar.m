@@ -92,6 +92,8 @@
     _items = items;
     [self createItemView];
 }
+
+#pragma mark - UI布局
 - (void)createItemView{
     CGFloat btnY = 0;
     CGFloat btnW = self.frame.size.width/(self.items.count);
@@ -107,6 +109,8 @@
         [self addSubview:tabBarBtn];
     }
 }
+
+#pragma mark - 选择状态改变
 - (void)setSelectedIndex:(NSInteger)selectedIndex{
     if (_selectedIndex >= 0 && _selectedIndex < self.items.count) {
         
@@ -121,6 +125,7 @@
     }
 }
 
+#pragma mark - 点击事件
 -(void)itemViewPressed:(HRTabbarButton *)tabbarBtn{
     NSInteger currentIndex = tabbarBtn.tag;
     if (currentIndex == _selectedIndex) {

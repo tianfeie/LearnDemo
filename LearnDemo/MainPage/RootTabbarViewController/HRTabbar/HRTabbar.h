@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 @protocol HRTabBarDelegate;
 
+/**
+ 自定义Tabbar
+ */
 @interface HRTabbar : UIView
 /**
  *  @brief 代理

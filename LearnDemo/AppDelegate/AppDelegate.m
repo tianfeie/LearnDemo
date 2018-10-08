@@ -20,6 +20,11 @@
     HRRootTababarViewController *tabbar = [[HRRootTababarViewController alloc] init];
     self.window.rootViewController = tabbar;
     [self.window makeKeyAndVisible];
+    [[HRGlobalData shareInstance] testBlock:^NSString *(NSString *paramStr) {
+        NSLog(@"%@",paramStr);
+        return @"qwe";
+    }];
+    
     return YES;
 }
 

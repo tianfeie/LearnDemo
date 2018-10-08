@@ -13,7 +13,7 @@
  账单类型
  */
 typedef NS_ENUM(NSInteger, HR_CircularLoanBillType) {
-    HR_CircularLoanBillType_CurrentBill = 0,//本期账单
+    HR_CircularLoanBillType_CurrentBill = 1,//本期账单
     HR_CircularLoanBillType_OverdueBill,    //逾期账单
     HR_CircularLoanBillType_EarlyClearanceBill//提前结清账单
 };
@@ -29,9 +29,24 @@ typedef NS_ENUM(NSInteger,HR_CircularLoanBillDidSelectedType) {
 };
 
 /**
+ delegate
+ */
+@class HRCircularLoanBillDetailCell;
+@protocol HR_CircularLoan_BillDetailCell_Delegate <NSObject>
+- (void)hr_circularLoan_billDetailCell:(HRCircularLoanBillDetailCell *)cell didSelectedBill:(BOOL)selected;
+- (void)hr_circularLoan_billDetailCell:(HRCircularLoanBillDetailCell *)cell didSpreadedBill:(BOOL)spreaded;
+- (void)hr_circularLoan_billDetailCell:(HRCircularLoanBillDetailCell *)cell selectedType:(HR_CircularLoanBillDidSelectedType)selectedType;
+@optional
+@end
+/**
  华融贷账单cell
  */
 @interface HRCircularLoanBillDetailCell : UITableViewCell
+
+/**
+ 代理
+ */
+@property (nonatomic, weak) id<HR_CircularLoan_BillDetailCell_Delegate> delegate;
 
 /**
  账单类型
@@ -63,5 +78,7 @@ typedef NS_ENUM(NSInteger,HR_CircularLoanBillDidSelectedType) {
  */
 @property (nonatomic, assign) BOOL isSpread;
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier circularLoanBillType:(HR_CircularLoanBillType)billType;
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier withModel:(HRCircularLoanBillsDetailModel *)model billType:(HR_CircularLoanBillType)billType;
+- (void)refreshUI;
 @end
+

@@ -38,9 +38,11 @@
     button.frame = CGRectMake((HRSCREEN_WIDTH - 200)*0.5, self.imageView.bottom + 40 , 200, HR_TABBARBAR_HEIGHT - HR_IPHONE_HOME_HEIGHT);
     [self.view addSubview:button];
 }
+
 - (void)textHRPayFieldDidEndEditing:(UITextField *)textField{
     NSLog(@"textField:%@",textField.text);
 }
+
 - (TFImagePicker *)imagePicker{
     if (!_imagePicker) {
         _imagePicker = [[TFImagePicker alloc] init];
@@ -48,6 +50,7 @@
     }
     return _imagePicker;
 }
+
 - (UIImageView *)imageView{
     if (!_imageView) {
         _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, HR_NAVIGATIONBAR_HEIGHT + 10, HRSCREEN_WIDTH -20, HRSCREEN_WIDTH -20)];

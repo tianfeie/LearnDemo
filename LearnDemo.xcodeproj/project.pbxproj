@@ -18,7 +18,6 @@
 		CE35DB6B2105864800176A41 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DB282105864800176A41 /* MASConstraint.m */; };
 		CE35DB6C2105864800176A41 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DB2A2105864800176A41 /* MASViewConstraint.m */; };
 		CE35DB6D2105864800176A41 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DB2B2105864800176A41 /* MASViewAttribute.m */; };
-		CE35DB6E2105864800176A41 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE35DB2C2105864800176A41 /* Info.plist */; };
 		CE35DB6F2105864800176A41 /* CKKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DB302105864800176A41 /* CKKeyboard.m */; };
 		CE35DB702105864800176A41 /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DB352105864800176A41 /* UIImage+Utils.m */; };
 		CE35DB712105864800176A41 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DB362105864800176A41 /* NSString+Utils.m */; };
@@ -54,13 +53,46 @@
 		CE35DBA7210819D000176A41 /* HRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DBA6210819D000176A41 /* HRNavigationController.m */; };
 		CE35DBAC210967AC00176A41 /* HomeSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DBAB210967AC00176A41 /* HomeSubView.m */; };
 		CE47B5F621129B71006F9D5F /* UINavigationController+HRTranition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47B5F521129B71006F9D5F /* UINavigationController+HRTranition.m */; };
+		CE4A215E215C70BC0078D687 /* circularOverduBills.json in Resources */ = {isa = PBXBuildFile; fileRef = CE4A215D215C70BC0078D687 /* circularOverduBills.json */; };
 		CE58C4D1211929BA00DC6F2D /* HRCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE58C4D0211929BA00DC6F2D /* HRCalendarViewController.m */; };
 		CE683C752138DF7D00CF6C57 /* HRCircularLoanBillsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683C742138DF7D00CF6C57 /* HRCircularLoanBillsDetailViewController.m */; };
 		CE683C782138DFD600CF6C57 /* HRCircularLoanBillDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683C772138DFD600CF6C57 /* HRCircularLoanBillDetailCell.m */; };
 		CE683C7C2138EC8B00CF6C57 /* HRCircularLoanBillsDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683C7B2138EC8B00CF6C57 /* HRCircularLoanBillsDetailModel.m */; };
+		CE683CB4214BA66400CF6C57 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CE683C8F214BA66400CF6C57 /* LICENSE */; };
+		CE683CB5214BA66400CF6C57 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CE683C90214BA66400CF6C57 /* README.md */; };
+		CE683CB6214BA66400CF6C57 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683C92214BA66400CF6C57 /* UIProgressView+AFNetworking.m */; };
+		CE683CB7214BA66400CF6C57 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683C94214BA66400CF6C57 /* UIRefreshControl+AFNetworking.m */; };
+		CE683CB8214BA66400CF6C57 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683C97214BA66400CF6C57 /* AFNetworkActivityIndicatorManager.m */; };
+		CE683CB9214BA66400CF6C57 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683C9D214BA66400CF6C57 /* UIImageView+AFNetworking.m */; };
+		CE683CBA214BA66400CF6C57 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CA0214BA66400CF6C57 /* UIButton+AFNetworking.m */; };
+		CE683CBB214BA66400CF6C57 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CA1214BA66400CF6C57 /* UIActivityIndicatorView+AFNetworking.m */; };
+		CE683CBC214BA66400CF6C57 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CA2214BA66400CF6C57 /* UIWebView+AFNetworking.m */; };
+		CE683CBD214BA66400CF6C57 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CA3214BA66400CF6C57 /* AFAutoPurgingImageCache.m */; };
+		CE683CBE214BA66400CF6C57 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CA5214BA66400CF6C57 /* AFImageDownloader.m */; };
+		CE683CBF214BA66400CF6C57 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CAB214BA66400CF6C57 /* AFURLResponseSerialization.m */; };
+		CE683CC0214BA66400CF6C57 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CAC214BA66400CF6C57 /* AFHTTPSessionManager.m */; };
+		CE683CC1214BA66400CF6C57 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CAE214BA66400CF6C57 /* AFURLSessionManager.m */; };
+		CE683CC2214BA66400CF6C57 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CAF214BA66400CF6C57 /* AFURLRequestSerialization.m */; };
+		CE683CC3214BA66400CF6C57 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CB1214BA66400CF6C57 /* AFNetworkReachabilityManager.m */; };
+		CE683CC4214BA66400CF6C57 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CB2214BA66400CF6C57 /* AFSecurityPolicy.m */; };
+		CE683CC7214BA74900CF6C57 /* HRNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CC6214BA74900CF6C57 /* HRNetworking.m */; };
+		CE683CD921523C4800CF6C57 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CCB21523C4800CF6C57 /* YYDiskCache.m */; };
+		CE683CDA21523C4800CF6C57 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CCD21523C4800CF6C57 /* YYCache.m */; };
+		CE683CDB21523C4800CF6C57 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CD121523C4800CF6C57 /* YYKVStorage.m */; };
+		CE683CDC21523C4800CF6C57 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CD221523C4800CF6C57 /* YYMemoryCache.m */; };
+		CE683CDD21523C4800CF6C57 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CD621523C4800CF6C57 /* NSObject+YYModel.m */; };
+		CE683CDE21523C4800CF6C57 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CD721523C4800CF6C57 /* YYClassInfo.m */; };
+		CE683CE22152429C00CF6C57 /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CE12152429C00CF6C57 /* NSObject+Additions.m */; };
+		CE683CE62152432700CF6C57 /* HRGlobalData.m in Sources */ = {isa = PBXBuildFile; fileRef = CE683CE52152432700CF6C57 /* HRGlobalData.m */; };
 		CE6C5CC7202DA6A80033B8EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6C5CC5202DA6A80033B8EE /* Main.storyboard */; };
 		CE6C5CC9202DA6A80033B8EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6C5CC8202DA6A80033B8EE /* Assets.xcassets */; };
 		CE6C5CCC202DA6A80033B8EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6C5CCA202DA6A80033B8EE /* LaunchScreen.storyboard */; };
+		CE864017215F501F0045BD88 /* circularEarlyBills.json in Resources */ = {isa = PBXBuildFile; fileRef = CE864015215F501F0045BD88 /* circularEarlyBills.json */; };
+		CE864018215F501F0045BD88 /* circularCurrentBills.json in Resources */ = {isa = PBXBuildFile; fileRef = CE864016215F501F0045BD88 /* circularCurrentBills.json */; };
+		CEB4B67D216AF53300C1A336 /* GreateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB4B67C216AF53300C1A336 /* GreateModel.m */; };
+		CEB4B680216AF54A00C1A336 /* StudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB4B67F216AF54A00C1A336 /* StudentModel.m */; };
+		CEB4B683216AF55D00C1A336 /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB4B682216AF55D00C1A336 /* ClassModel.m */; };
+		CEB4B685216AFB3100C1A336 /* GreateJson.json in Resources */ = {isa = PBXBuildFile; fileRef = CEB4B684216AFB3100C1A336 /* GreateJson.json */; };
 		CEEF0D2C20745A3B00B422F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C5CC3202DA6A80033B8EE /* ViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -149,6 +181,7 @@
 		CE35DBAB210967AC00176A41 /* HomeSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeSubView.m; sourceTree = "<group>"; };
 		CE47B5F421129B71006F9D5F /* UINavigationController+HRTranition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HRTranition.h"; sourceTree = "<group>"; };
 		CE47B5F521129B71006F9D5F /* UINavigationController+HRTranition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HRTranition.m"; sourceTree = "<group>"; };
+		CE4A215D215C70BC0078D687 /* circularOverduBills.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = circularOverduBills.json; sourceTree = "<group>"; };
 		CE58C4CF211929BA00DC6F2D /* HRCalendarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRCalendarViewController.h; sourceTree = "<group>"; };
 		CE58C4D0211929BA00DC6F2D /* HRCalendarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRCalendarViewController.m; sourceTree = "<group>"; };
 		CE683C732138DF7D00CF6C57 /* HRCircularLoanBillsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRCircularLoanBillsDetailViewController.h; sourceTree = "<group>"; };
@@ -157,6 +190,61 @@
 		CE683C772138DFD600CF6C57 /* HRCircularLoanBillDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRCircularLoanBillDetailCell.m; sourceTree = "<group>"; };
 		CE683C7A2138EC8B00CF6C57 /* HRCircularLoanBillsDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRCircularLoanBillsDetailModel.h; sourceTree = "<group>"; };
 		CE683C7B2138EC8B00CF6C57 /* HRCircularLoanBillsDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRCircularLoanBillsDetailModel.m; sourceTree = "<group>"; };
+		CE683C8F214BA66400CF6C57 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CE683C90214BA66400CF6C57 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CE683C92214BA66400CF6C57 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		CE683C93214BA66400CF6C57 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		CE683C94214BA66400CF6C57 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		CE683C95214BA66400CF6C57 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		CE683C96214BA66400CF6C57 /* AFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageDownloader.h; sourceTree = "<group>"; };
+		CE683C97214BA66400CF6C57 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		CE683C98214BA66400CF6C57 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
+		CE683C99214BA66400CF6C57 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		CE683C9A214BA66400CF6C57 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		CE683C9B214BA66400CF6C57 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		CE683C9C214BA66400CF6C57 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		CE683C9D214BA66400CF6C57 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		CE683C9E214BA66400CF6C57 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		CE683C9F214BA66400CF6C57 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		CE683CA0214BA66400CF6C57 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		CE683CA1214BA66400CF6C57 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		CE683CA2214BA66400CF6C57 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		CE683CA3214BA66400CF6C57 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
+		CE683CA4214BA66400CF6C57 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		CE683CA5214BA66400CF6C57 /* AFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageDownloader.m; sourceTree = "<group>"; };
+		CE683CA7214BA66400CF6C57 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		CE683CA8214BA66400CF6C57 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		CE683CA9214BA66400CF6C57 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		CE683CAA214BA66400CF6C57 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		CE683CAB214BA66400CF6C57 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		CE683CAC214BA66400CF6C57 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		CE683CAD214BA66400CF6C57 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		CE683CAE214BA66400CF6C57 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		CE683CAF214BA66400CF6C57 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		CE683CB0214BA66400CF6C57 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		CE683CB1214BA66400CF6C57 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		CE683CB2214BA66400CF6C57 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		CE683CB3214BA66400CF6C57 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		CE683CC5214BA74900CF6C57 /* HRNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRNetworking.h; sourceTree = "<group>"; };
+		CE683CC6214BA74900CF6C57 /* HRNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRNetworking.m; sourceTree = "<group>"; };
+		CE683CCB21523C4800CF6C57 /* YYDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDiskCache.m; sourceTree = "<group>"; };
+		CE683CCC21523C4800CF6C57 /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
+		CE683CCD21523C4800CF6C57 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
+		CE683CCE21523C4800CF6C57 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
+		CE683CCF21523C4800CF6C57 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
+		CE683CD021523C4800CF6C57 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
+		CE683CD121523C4800CF6C57 /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
+		CE683CD221523C4800CF6C57 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
+		CE683CD421523C4800CF6C57 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		CE683CD521523C4800CF6C57 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		CE683CD621523C4800CF6C57 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		CE683CD721523C4800CF6C57 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		CE683CD821523C4800CF6C57 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		CE683CDF2152403300CF6C57 /* HRNomalMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRNomalMacro.h; sourceTree = "<group>"; };
+		CE683CE02152429C00CF6C57 /* NSObject+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additions.h"; sourceTree = "<group>"; };
+		CE683CE12152429C00CF6C57 /* NSObject+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
+		CE683CE42152432700CF6C57 /* HRGlobalData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRGlobalData.h; sourceTree = "<group>"; };
+		CE683CE52152432700CF6C57 /* HRGlobalData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRGlobalData.m; sourceTree = "<group>"; };
 		CE6C5CBC202DA6A80033B8EE /* LearnDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6C5CC2202DA6A80033B8EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CE6C5CC3202DA6A80033B8EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -165,6 +253,15 @@
 		CE6C5CCB202DA6A80033B8EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE6C5CCD202DA6A90033B8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE6C5CCE202DA6A90033B8EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE864015215F501F0045BD88 /* circularEarlyBills.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = circularEarlyBills.json; sourceTree = "<group>"; };
+		CE864016215F501F0045BD88 /* circularCurrentBills.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = circularCurrentBills.json; sourceTree = "<group>"; };
+		CEB4B67B216AF53300C1A336 /* GreateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreateModel.h; sourceTree = "<group>"; };
+		CEB4B67C216AF53300C1A336 /* GreateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreateModel.m; sourceTree = "<group>"; };
+		CEB4B67E216AF54A00C1A336 /* StudentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentModel.h; sourceTree = "<group>"; };
+		CEB4B67F216AF54A00C1A336 /* StudentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentModel.m; sourceTree = "<group>"; };
+		CEB4B681216AF55D00C1A336 /* ClassModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassModel.h; sourceTree = "<group>"; };
+		CEB4B682216AF55D00C1A336 /* ClassModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassModel.m; sourceTree = "<group>"; };
+		CEB4B684216AFB3100C1A336 /* GreateJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GreateJson.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +278,8 @@
 		CE35DB112105864800176A41 /* Reference */ = {
 			isa = PBXGroup;
 			children = (
+				CE683CC921523C4800CF6C57 /* YYKit */,
+				CE683C8E214BA66400CF6C57 /* AFNetworking */,
 				CE35DB122105864800176A41 /* Masonry */,
 			);
 			path = Reference;
@@ -245,6 +344,8 @@
 				CE35DB352105864800176A41 /* UIImage+Utils.m */,
 				CE35DB342105864800176A41 /* UIView+Extension.h */,
 				CE35DB372105864800176A41 /* UIView+Extension.m */,
+				CE683CE02152429C00CF6C57 /* NSObject+Additions.h */,
+				CE683CE12152429C00CF6C57 /* NSObject+Additions.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -253,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				CE35DB392105864800176A41 /* PrefixHeader.pch */,
+				CE683CDF2152403300CF6C57 /* HRNomalMacro.h */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -269,6 +371,7 @@
 		CE35DB3D2105864800176A41 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
+				CEB4B67A216AF4F600C1A336 /* HRTestPage */,
 				CE683C702138DED600CF6C57 /* HRCircularLoanPage */,
 				CE58C4CE211929A000DC6F2D /* HRCalendarPage */,
 				CE35DB942107283900176A41 /* HomePage */,
@@ -506,10 +609,125 @@
 		CE683C792138EC7400CF6C57 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE864016215F501F0045BD88 /* circularCurrentBills.json */,
+				CE864015215F501F0045BD88 /* circularEarlyBills.json */,
+				CE4A215D215C70BC0078D687 /* circularOverduBills.json */,
 				CE683C7A2138EC8B00CF6C57 /* HRCircularLoanBillsDetailModel.h */,
 				CE683C7B2138EC8B00CF6C57 /* HRCircularLoanBillsDetailModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CE683C8C214BA5E000CF6C57 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				CE683CC5214BA74900CF6C57 /* HRNetworking.h */,
+				CE683CC6214BA74900CF6C57 /* HRNetworking.m */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		CE683C8E214BA66400CF6C57 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CE683C8F214BA66400CF6C57 /* LICENSE */,
+				CE683C90214BA66400CF6C57 /* README.md */,
+				CE683C91214BA66400CF6C57 /* UIKit+AFNetworking */,
+				CE683CA6214BA66400CF6C57 /* AFNetworking */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		CE683C91214BA66400CF6C57 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CE683C9E214BA66400CF6C57 /* UIKit+AFNetworking.h */,
+				CE683C93214BA66400CF6C57 /* UIButton+AFNetworking.h */,
+				CE683CA0214BA66400CF6C57 /* UIButton+AFNetworking.m */,
+				CE683C95214BA66400CF6C57 /* UIImageView+AFNetworking.h */,
+				CE683C9D214BA66400CF6C57 /* UIImageView+AFNetworking.m */,
+				CE683C96214BA66400CF6C57 /* AFImageDownloader.h */,
+				CE683CA5214BA66400CF6C57 /* AFImageDownloader.m */,
+				CE683C98214BA66400CF6C57 /* AFAutoPurgingImageCache.h */,
+				CE683CA3214BA66400CF6C57 /* AFAutoPurgingImageCache.m */,
+				CE683C9A214BA66400CF6C57 /* UIActivityIndicatorView+AFNetworking.h */,
+				CE683CA1214BA66400CF6C57 /* UIActivityIndicatorView+AFNetworking.m */,
+				CE683C9C214BA66400CF6C57 /* UIProgressView+AFNetworking.h */,
+				CE683C92214BA66400CF6C57 /* UIProgressView+AFNetworking.m */,
+				CE683C9B214BA66400CF6C57 /* UIImage+AFNetworking.h */,
+				CE683C9F214BA66400CF6C57 /* UIRefreshControl+AFNetworking.h */,
+				CE683C94214BA66400CF6C57 /* UIRefreshControl+AFNetworking.m */,
+				CE683C99214BA66400CF6C57 /* UIWebView+AFNetworking.h */,
+				CE683CA2214BA66400CF6C57 /* UIWebView+AFNetworking.m */,
+				CE683CA4214BA66400CF6C57 /* AFNetworkActivityIndicatorManager.h */,
+				CE683C97214BA66400CF6C57 /* AFNetworkActivityIndicatorManager.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		CE683CA6214BA66400CF6C57 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CE683CB0214BA66400CF6C57 /* AFNetworking.h */,
+				CE683CA7214BA66400CF6C57 /* AFSecurityPolicy.h */,
+				CE683CB2214BA66400CF6C57 /* AFSecurityPolicy.m */,
+				CE683CA8214BA66400CF6C57 /* AFNetworkReachabilityManager.h */,
+				CE683CB1214BA66400CF6C57 /* AFNetworkReachabilityManager.m */,
+				CE683CAA214BA66400CF6C57 /* AFURLRequestSerialization.h */,
+				CE683CAF214BA66400CF6C57 /* AFURLRequestSerialization.m */,
+				CE683CAD214BA66400CF6C57 /* AFURLResponseSerialization.h */,
+				CE683CAB214BA66400CF6C57 /* AFURLResponseSerialization.m */,
+				CE683CAC214BA66400CF6C57 /* AFHTTPSessionManager.m */,
+				CE683CA9214BA66400CF6C57 /* AFURLSessionManager.h */,
+				CE683CAE214BA66400CF6C57 /* AFURLSessionManager.m */,
+				CE683CB3214BA66400CF6C57 /* AFHTTPSessionManager.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		CE683CC921523C4800CF6C57 /* YYKit */ = {
+			isa = PBXGroup;
+			children = (
+				CE683CCA21523C4800CF6C57 /* YYCache */,
+				CE683CD321523C4800CF6C57 /* YYModel */,
+			);
+			path = YYKit;
+			sourceTree = "<group>";
+		};
+		CE683CCA21523C4800CF6C57 /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				CE683CCB21523C4800CF6C57 /* YYDiskCache.m */,
+				CE683CCC21523C4800CF6C57 /* YYKVStorage.h */,
+				CE683CCD21523C4800CF6C57 /* YYCache.m */,
+				CE683CCE21523C4800CF6C57 /* YYMemoryCache.h */,
+				CE683CCF21523C4800CF6C57 /* YYDiskCache.h */,
+				CE683CD021523C4800CF6C57 /* YYCache.h */,
+				CE683CD121523C4800CF6C57 /* YYKVStorage.m */,
+				CE683CD221523C4800CF6C57 /* YYMemoryCache.m */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
+		CE683CD321523C4800CF6C57 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE683CD521523C4800CF6C57 /* YYModel.h */,
+				CE683CD421523C4800CF6C57 /* YYClassInfo.h */,
+				CE683CD721523C4800CF6C57 /* YYClassInfo.m */,
+				CE683CD821523C4800CF6C57 /* NSObject+YYModel.h */,
+				CE683CD621523C4800CF6C57 /* NSObject+YYModel.m */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		CE683CE3215242F500CF6C57 /* HRGlobalData */ = {
+			isa = PBXGroup;
+			children = (
+				CE683CE42152432700CF6C57 /* HRGlobalData.h */,
+				CE683CE52152432700CF6C57 /* HRGlobalData.m */,
+			);
+			path = HRGlobalData;
 			sourceTree = "<group>";
 		};
 		CE6C5CB3202DA6A80033B8EE = {
@@ -532,7 +750,9 @@
 			isa = PBXGroup;
 			children = (
 				CE35DB3A2105864800176A41 /* AppDelegate */,
+				CE683CE3215242F500CF6C57 /* HRGlobalData */,
 				CE35DB312105864800176A41 /* Category */,
+				CE683C8C214BA5E000CF6C57 /* Net */,
 				CE35DB382105864800176A41 /* Header */,
 				CE35DB3D2105864800176A41 /* MainPage */,
 				CE35DB9E21072A4500176A41 /* SuperClass */,
@@ -547,6 +767,20 @@
 				CE6C5CCE202DA6A90033B8EE /* main.m */,
 			);
 			path = LearnDemo;
+			sourceTree = "<group>";
+		};
+		CEB4B67A216AF4F600C1A336 /* HRTestPage */ = {
+			isa = PBXGroup;
+			children = (
+				CEB4B684216AFB3100C1A336 /* GreateJson.json */,
+				CEB4B67B216AF53300C1A336 /* GreateModel.h */,
+				CEB4B67C216AF53300C1A336 /* GreateModel.m */,
+				CEB4B681216AF55D00C1A336 /* ClassModel.h */,
+				CEB4B682216AF55D00C1A336 /* ClassModel.m */,
+				CEB4B67E216AF54A00C1A336 /* StudentModel.h */,
+				CEB4B67F216AF54A00C1A336 /* StudentModel.m */,
+			);
+			path = HRTestPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -607,19 +841,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE35DB6E2105864800176A41 /* Info.plist in Resources */,
 				CE35DB7B2105864800176A41 /* photograph_Select@2x.png in Resources */,
 				CE35DB7D2105864800176A41 /* changeCamera@2x.png in Resources */,
 				CE35DB792105864800176A41 /* flashOpen@3x.png in Resources */,
+				CE864017215F501F0045BD88 /* circularEarlyBills.json in Resources */,
 				CE6C5CCC202DA6A80033B8EE /* LaunchScreen.storyboard in Resources */,
 				CE35DB7A2105864800176A41 /* photograph_Select@3x.png in Resources */,
+				CE683CB4214BA66400CF6C57 /* LICENSE in Resources */,
 				CE35DB7E2105864800176A41 /* changeCamera@3x.png in Resources */,
 				CE35DB852105864800176A41 /* focus@2x.png in Resources */,
 				CE35DB802105864800176A41 /* photograph@3x.png in Resources */,
 				CE35DB7F2105864800176A41 /* flash@2x.png in Resources */,
 				CE35DB7C2105864800176A41 /* flashOpen@2x.png in Resources */,
+				CE4A215E215C70BC0078D687 /* circularOverduBills.json in Resources */,
 				CE35DB822105864800176A41 /* flash@3x.png in Resources */,
+				CE683CB5214BA66400CF6C57 /* README.md in Resources */,
 				CE35DB842105864800176A41 /* tf_default.jpg in Resources */,
+				CE864018215F501F0045BD88 /* circularCurrentBills.json in Resources */,
+				CEB4B685216AFB3100C1A336 /* GreateJson.json in Resources */,
 				CE35DB832105864800176A41 /* focus@3x.png in Resources */,
 				CE6C5CC9202DA6A80033B8EE /* Assets.xcassets in Resources */,
 				CE6C5CC7202DA6A80033B8EE /* Main.storyboard in Resources */,
@@ -634,43 +873,70 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE683CB8214BA66400CF6C57 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				CEB4B680216AF54A00C1A336 /* StudentModel.m in Sources */,
+				CE683CDD21523C4800CF6C57 /* NSObject+YYModel.m in Sources */,
 				CE35DB882105864800176A41 /* TFPayViewController.m in Sources */,
+				CE683CBC214BA66400CF6C57 /* UIWebView+AFNetworking.m in Sources */,
 				CE35DBA7210819D000176A41 /* HRNavigationController.m in Sources */,
+				CE683CB7214BA66400CF6C57 /* UIRefreshControl+AFNetworking.m in Sources */,
 				CE47B5F621129B71006F9D5F /* UINavigationController+HRTranition.m in Sources */,
 				CE683C7C2138EC8B00CF6C57 /* HRCircularLoanBillsDetailModel.m in Sources */,
+				CE683CBD214BA66400CF6C57 /* AFAutoPurgingImageCache.m in Sources */,
 				CE0797BA20805C2E001D02C3 /* main.m in Sources */,
 				CE35DB6C2105864800176A41 /* MASViewConstraint.m in Sources */,
 				CE683C752138DF7D00CF6C57 /* HRCircularLoanBillsDetailViewController.m in Sources */,
 				CEEF0D2C20745A3B00B422F2 /* ViewController.m in Sources */,
+				CE683CD921523C4800CF6C57 /* YYDiskCache.m in Sources */,
+				CE683CC2214BA66400CF6C57 /* AFURLRequestSerialization.m in Sources */,
+				CE683CBE214BA66400CF6C57 /* AFImageDownloader.m in Sources */,
+				CE683CC3214BA66400CF6C57 /* AFNetworkReachabilityManager.m in Sources */,
 				CE35DB892105864800176A41 /* HRPayTextField.m in Sources */,
+				CE683CE22152429C00CF6C57 /* NSObject+Additions.m in Sources */,
 				CE35DB752105864800176A41 /* TFImageCropViewController.m in Sources */,
+				CEB4B683216AF55D00C1A336 /* ClassModel.m in Sources */,
+				CE683CC7214BA74900CF6C57 /* HRNetworking.m in Sources */,
+				CE683CBA214BA66400CF6C57 /* UIButton+AFNetworking.m in Sources */,
 				CE35DB9D2107287E00176A41 /* HomeSubViewController.m in Sources */,
+				CE683CBB214BA66400CF6C57 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				CE35DB9A2107286900176A41 /* HomeViewController.m in Sources */,
 				CE35DB922105A8EE00176A41 /* HRTabbar.m in Sources */,
 				CE35DB702105864800176A41 /* UIImage+Utils.m in Sources */,
 				CE35DB762105864800176A41 /* TFCameraViewController.m in Sources */,
 				CE35DB652105864800176A41 /* ViewController+MASAdditions.m in Sources */,
+				CE683CDE21523C4800CF6C57 /* YYClassInfo.m in Sources */,
+				CE683CC4214BA66400CF6C57 /* AFSecurityPolicy.m in Sources */,
 				CE35DB682105864800176A41 /* MASLayoutConstraint.m in Sources */,
+				CE683CB9214BA66400CF6C57 /* UIImageView+AFNetworking.m in Sources */,
+				CE683CC1214BA66400CF6C57 /* AFURLSessionManager.m in Sources */,
 				CE35DB6D2105864800176A41 /* MASViewAttribute.m in Sources */,
 				CE35DB872105864800176A41 /* HRScaleSlideViewController.m in Sources */,
 				CE35DB712105864800176A41 /* NSString+Utils.m in Sources */,
+				CE683CDA21523C4800CF6C57 /* YYCache.m in Sources */,
 				CE35DB8F2105A8A800176A41 /* HRRootTababarViewController.m in Sources */,
 				CE683C782138DFD600CF6C57 /* HRCircularLoanBillDetailCell.m in Sources */,
+				CE683CE62152432700CF6C57 /* HRGlobalData.m in Sources */,
 				CE35DBA221072A7700176A41 /* BaseViewController.m in Sources */,
 				CE35DB6B2105864800176A41 /* MASConstraint.m in Sources */,
+				CE683CDC21523C4800CF6C57 /* YYMemoryCache.m in Sources */,
+				CE683CDB21523C4800CF6C57 /* YYKVStorage.m in Sources */,
 				CE35DB782105864800176A41 /* TFRootCameraViewController.m in Sources */,
+				CE683CB6214BA66400CF6C57 /* UIProgressView+AFNetworking.m in Sources */,
 				CE35DB742105864800176A41 /* TFImagePicker.m in Sources */,
 				CE35DB692105864800176A41 /* NSArray+MASAdditions.m in Sources */,
 				CE35DB642105864800176A41 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				CE35DB6F2105864800176A41 /* CKKeyboard.m in Sources */,
 				CE35DBAC210967AC00176A41 /* HomeSubView.m in Sources */,
 				CE35DB862105864800176A41 /* ZDSliderPickerView.m in Sources */,
+				CE683CC0214BA66400CF6C57 /* AFHTTPSessionManager.m in Sources */,
 				CE35DB772105864800176A41 /* TFImageScrollView.m in Sources */,
 				CE35DB662105864800176A41 /* MASCompositeConstraint.m in Sources */,
 				CE35DB672105864800176A41 /* MASConstraintMaker.m in Sources */,
 				CE35DB732105864800176A41 /* AppDelegate.m in Sources */,
+				CEB4B67D216AF53300C1A336 /* GreateModel.m in Sources */,
 				CE58C4D1211929BA00DC6F2D /* HRCalendarViewController.m in Sources */,
 				CE35DB722105864800176A41 /* UIView+Extension.m in Sources */,
+				CE683CBF214BA66400CF6C57 /* AFURLResponseSerialization.m in Sources */,
 				CE35DB6A2105864800176A41 /* View+MASAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -805,17 +1071,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: ShangHai P&C Information Technology Co., Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xinyue Lin (47DA2B8FHN)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LearnDemo/Header/PrefixHeader.pch";
 				INFOPLIST_FILE = LearnDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yitong.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chamc.hrcfc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ea7ea0e7-a833-40d3-93ee-c47e1cad4a04";
-				PROVISIONING_PROFILE_SPECIFIER = YTEnterpriseDist2018;
+				PROVISIONING_PROFILE_SPECIFIER = hrcfc_deve;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -824,17 +1090,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: ShangHai P&C Information Technology Co., Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xinyue Lin (47DA2B8FHN)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LearnDemo/Header/PrefixHeader.pch";
 				INFOPLIST_FILE = LearnDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yitong.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chamc.hrcfc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ea7ea0e7-a833-40d3-93ee-c47e1cad4a04";
-				PROVISIONING_PROFILE_SPECIFIER = YTEnterpriseDist2018;
+				PROVISIONING_PROFILE_SPECIFIER = hrcfc_deve;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

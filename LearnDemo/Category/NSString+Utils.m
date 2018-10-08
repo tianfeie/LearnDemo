@@ -54,8 +54,12 @@
     return nil;
 }
 
-+ (NSString *)getNoNullString:(id)object
++ (NSString *)safetyString:(id)object
 {
+    
+    if ([object isKindOfClass:[NSNumber class]]) {
+        return [NSString stringWithFormat:@"%@",object];
+    }
     
     // 若不是字符串类型，直接转换位字符串返回
     if (!object || [object isEqual:[NSNull null]] || [object isEqual:@"<null>"]) {

@@ -7,7 +7,9 @@
 //
 
 #import "HomeViewController.h"
-
+#import "GreateModel.h"
+#import "ClassModel.h"
+#import "StudentModel.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataSource;
@@ -17,7 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSource = @[@{@"title":@"自定义相机",@"ViewController":@"TFRootCameraViewController",@"modalType":@"push"},@{@"title":@"支付密码框",@"ViewController":@"TFPayViewController",@"modalType":@"push"},@{@"title":@"刻度尺",@"ViewController":@"HRScaleSlideViewController",@"modalType":@"push"},@{@"title":@"圆弧刻度盘",@"ViewController":@"HomeSubViewController",@"modalType":@"present"}];
+    [self testYY_Model];
+    self.dataSource = @[@{@"title":@"自定义相机",@"ViewController":@"TFRootCameraViewController",@"modalType":@"push"},@{@"title":@"支付密码框",@"ViewController":@"TFPayViewController",@"modalType":@"push"},@{@"title":@"刻度尺",@"ViewController":@"HRScaleSlideViewController",@"modalType":@"push"},@{@"title":@"圆弧刻度盘",@"ViewController":@"HomeSubViewController",@"modalType":@"present"},@{@"title":@"账单",@"ViewController":@"HRCircularLoanBillsDetailViewController",@"modalType":@"push"}];
     [self.view addSubview:self.tableView];
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;//UIScrollView也适用
@@ -82,5 +85,24 @@
     }
 //
     
+}
+
+#pragma mark - 测试YYModel，json转嵌套model
+- (void)testYY_Model{
+    
+    // 获取文件路径
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"GreateJson" ofType:@"json"];    // 将文件数据化
+    NSData *data = [[NSData alloc] initWithContentsOfFile:path];    // 对数据进行JSON格式化并返回字典形式
+    NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+    GreateModel *model = [GreateModel yy_modelWithJSON:responseDict];
+    ClassModel *classModel0 = model.classModels[0];
+    ClassModel *classModel1 = model.classModels[1];
+    
+    NSArray *studentArray0 = classModel0.studentModels;
+    StudentModel *studentModel0 = studentArray0[0];
+    NSArray *studentArray1 = classModel1.studentModels;
+    StudentModel *studentModel1 = studentArray1[0];
+    NSString *name = studentModel1.name;
+    NSLog(@"%@",name);
 }
 @end

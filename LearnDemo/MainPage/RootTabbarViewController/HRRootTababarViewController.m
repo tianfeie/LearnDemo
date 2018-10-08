@@ -49,6 +49,7 @@
     [self.tabBar setShadowImage:img];
 }
 
+#pragma mark - setTabbar
 - (void)setup{
     _tabbarIndex = 0;
     HRTabbar *tabbar = [[HRTabbar alloc] init];
@@ -63,6 +64,8 @@
     [self.tabBar addSubview:tabbar];
     _tabbar = tabbar;
 }
+
+#pragma mark - containViewController and tabbar DataSource
 - (void)addCustomTabbarControllers
 {
     NSArray *titles = @[@"首页",@"服务",@"发现",@"我的"];
@@ -91,12 +94,15 @@
     self.tabbar.selectedIndex = _tabbarIndex;
     
 }
+
+#pragma amrk - 设置选中项
 - (void)setTabbarIndex:(NSInteger)tabbarIndex{
     _tabbarIndex = tabbarIndex;
     self.selectedIndex = _tabbarIndex;
     self.tabbar.selectedIndex = _tabbarIndex;
 }
 
+#pragma amrk - tabbar delegate
 - (void)tabBar:(HRTabbar *)tabBar didSelectIndex:(NSUInteger)index{
     self.tabbarIndex = index;
 }

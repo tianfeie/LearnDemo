@@ -9,10 +9,6 @@
 #import "HRCalendarViewController.h"
 
 @interface HRCalendarViewController ()
-@property (nonatomic,strong)UILabel *startLabel;
-@property (nonatomic,strong)UILabel *endLabel;
-@property (nonatomic,assign)NSInteger startDate;
-@property (nonatomic,assign)NSInteger endDate;
 @end
 
 @implementation HRCalendarViewController

@@ -37,6 +37,7 @@
 @property (nonatomic, copy) NSString *maxBalance;//最大抵用金额 (利息)
 @property (nonatomic, copy) NSString *maxRepayFee;//（最大抵扣额度（手续费）
 @property (nonatomic, copy) NSString *repayMsg;//提示信息
+@property (nonatomic, copy) NSString *couponCount;//自定义优惠金额（不在报文内）
 - (instancetype)initWithDict:(NSDictionary *)dict;
 @end
 

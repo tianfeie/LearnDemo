@@ -44,7 +44,7 @@
  @param object obj
  @return 返回该字符串，若为nil 返回 @""
  */
-+ (NSString *)getNoNullString:(id)object;
++ (NSString *)safetyString:(id)object;
 
 - (NSString *)middleHiddenString;
 @end
