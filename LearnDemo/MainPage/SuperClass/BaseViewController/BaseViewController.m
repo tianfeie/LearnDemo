@@ -49,7 +49,7 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
-    if (_isPeresntVc && _showBackButton) {
+    if (_isPeresntVc && !_hideBackBtn) {
         [self.backButton setImage:[UIImage imageNamed:@"hr_cancel"] forState:UIControlStateNormal];
         self.backButton.imageEdgeInsets = UIEdgeInsetsMake(12, 12, 12, 2);
     }
@@ -121,11 +121,11 @@
     }
 }
 
-- (void)setShowBackButton:(BOOL)showBackButton
+- (void)setHideBackBtn:(BOOL)hideBackBtn
 {
-    if (showBackButton) {
-        _showBackButton = showBackButton;
-        self.backButton.hidden = !showBackButton;
+    if (!_hideBackBtn) {
+        _hideBackBtn = hideBackBtn;
+        self.backButton.hidden = hideBackBtn;
     }
     else{
         self.backButton.hidden = YES;
@@ -133,9 +133,9 @@
     }
 }
 
-- (void)setShowRightButton:(BOOL)showRightButton
+- (void)setShowRightBtn:(BOOL)showRightBtn
 {
-    _showRightButton = showRightButton;
-    self.rightButton.hidden = !showRightButton;
+    _showRightBtn = showRightBtn;
+    self.rightButton.hidden = !showRightBtn;
 }
 @end
