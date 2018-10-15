@@ -24,7 +24,6 @@
         NSLog(@"%@",paramStr);
         return @"qwe";
     }];
-    
     return YES;
 }
 

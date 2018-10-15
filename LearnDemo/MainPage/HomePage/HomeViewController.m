@@ -74,8 +74,9 @@
     [self jumpVC:dict];
 }
 
-- (void)jumpVC:(NSDictionary *)param{
-    
+#pragma mark - 控制器跳转
+- (void)jumpVC:(NSDictionary *)param
+{
     UIViewController *vc = [[NSClassFromString(param[@"ViewController"]) alloc] init];
     NSString *modalType = param[@"modalType"];
     if ([modalType isEqualToString:@"push"]) {
@@ -83,26 +84,22 @@
     }else{
         [self presentViewController:vc animated:YES completion:nil];
     }
-//
-    
 }
 
 #pragma mark - 测试YYModel，json转嵌套model
-- (void)testYY_Model{
-    
+- (void)testYY_Model
+{
     // 获取文件路径
     NSString *path = [[NSBundle mainBundle] pathForResource:@"GreateJson" ofType:@"json"];    // 将文件数据化
     NSData *data = [[NSData alloc] initWithContentsOfFile:path];    // 对数据进行JSON格式化并返回字典形式
     NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
     GreateModel *model = [GreateModel yy_modelWithJSON:responseDict];
-    ClassModel *classModel0 = model.classModels[0];
     ClassModel *classModel1 = model.classModels[1];
     
-    NSArray *studentArray0 = classModel0.studentModels;
-    StudentModel *studentModel0 = studentArray0[0];
     NSArray *studentArray1 = classModel1.studentModels;
     StudentModel *studentModel1 = studentArray1[0];
     NSString *name = studentModel1.name;
     NSLog(@"%@",name);
 }
+
 @end
