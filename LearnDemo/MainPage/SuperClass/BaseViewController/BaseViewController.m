@@ -9,25 +9,31 @@
 #import "BaseViewController.h"
 
 @interface BaseViewController ()
+@property (nonatomic, strong)UIButton *backButton;
 
+@property (nonatomic, strong)UIButton *rightButton;
 @end
 
 @implementation BaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.view.backgroundColor = HRBackgroundColor;
+    
     // 隐藏导航栏后,需要自己去实现左边界右滑退出.
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+    
+    [self.view addSubview:self.hrNavigationBar];
+    // Do any additional setup after loading the view.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    [self.view bringSubviewToFront:self.hrNavigationBar];
     
     // 隐藏导航栏后,需要自己去实现左边界右滑退出.
     if (self.navigationController.viewControllers.count > 1){
@@ -36,5 +42,100 @@
     else{
         self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     }
+}
+
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    if (_isPeresntVc && _showBackButton) {
+        [self.backButton setImage:[UIImage imageNamed:@"hr_cancel"] forState:UIControlStateNormal];
+        self.backButton.imageEdgeInsets = UIEdgeInsetsMake(12, 12, 12, 2);
+    }
+}
+
+
+- (HRNavigationBar *)hrNavigationBar
+{
+    if (_hrNavigationBar == nil) {
+        _hrNavigationBar = [[HRNavigationBar alloc]initWithFrame:CGRectMake(0, 0, HRSCREEN_WIDTH, HR_NAVIGATIONBAR_HEIGHT)];
+    }
+    
+    return _hrNavigationBar;
+}
+
+- (UIButton *)backButton
+{
+    if (_backButton == nil) {
+        // 返回
+        _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_backButton addTarget:self action:@selector(backButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+        _backButton.frame = CGRectMake(0, iPhoneX?44:20, 75,44);
+        _backButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        _backButton.imageEdgeInsets = UIEdgeInsetsMake(10, 5, 10, 0);
+        [_backButton setImage:[UIImage imageNamed:@"hr_back_white"] forState:UIControlStateNormal];
+        [self.hrNavigationBar addSubview:_backButton];
+        //        self.hrNavigationBar.navItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_backButton];
+    }
+    return _backButton;
+}
+
+- (UIButton *)rightButton
+{
+    if (!_rightButton) {
+        // 返回
+        _rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_rightButton addTarget:self action:@selector(rightButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+        _rightButton.frame = CGRectMake(HRSCREEN_WIDTH - HRSCREEN_WIDTH/7, iPhoneX?44:20, HRSCREEN_WIDTH/7,44);
+        _rightButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        _rightButton.imageEdgeInsets = UIEdgeInsetsMake(10, HRSCREEN_WIDTH/7 - 30, 10, 0);
+        [_rightButton setImage:[UIImage imageNamed:@"hr_home02"] forState:UIControlStateNormal];
+        [self.hrNavigationBar addSubview:_rightButton];
+    }
+    return _rightButton;
+}
+
+
+- (void)backButtonClick:(UIButton *)button
+{
+    if (self.isPeresntVc) {
+        [self dismissViewControllerAnimated:YES completion:^{
+            
+        }];
+    }
+    else{
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
+- (void)rightButtonClick:(UIButton *)sender
+{
+    if (self.isPeresntVc) {
+        [self dismissViewControllerAnimated:YES completion:^{
+            
+        }];
+    }
+    else{
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
+}
+
+- (void)setShowBackButton:(BOOL)showBackButton
+{
+    if (showBackButton) {
+        _showBackButton = showBackButton;
+        self.backButton.hidden = !showBackButton;
+    }
+    else{
+        self.backButton.hidden = YES;
+        
+    }
+}
+
+- (void)setShowRightButton:(BOOL)showRightButton
+{
+    _showRightButton = showRightButton;
+    self.rightButton.hidden = !showRightButton;
 }
 @end

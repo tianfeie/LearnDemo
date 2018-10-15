@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "HRNavigationBar.h"
 @interface BaseViewController : UIViewController
+@property (nonatomic,strong)HRNavigationBar * hrNavigationBar;
+@property (nonatomic,strong)UINavigationItem *hrNavigationItem;
 
+@property (nonatomic, assign)BOOL  showBackButton;
+@property (nonatomic, assign)BOOL  showRightButton;
+@property (nonatomic, assign)BOOL  isPeresntVc;
 @end

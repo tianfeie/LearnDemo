@@ -93,6 +93,7 @@
 		CEB4B680216AF54A00C1A336 /* StudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB4B67F216AF54A00C1A336 /* StudentModel.m */; };
 		CEB4B683216AF55D00C1A336 /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB4B682216AF55D00C1A336 /* ClassModel.m */; };
 		CEB4B685216AFB3100C1A336 /* GreateJson.json in Resources */ = {isa = PBXBuildFile; fileRef = CEB4B684216AFB3100C1A336 /* GreateJson.json */; };
+		CEB4B688217423A600C1A336 /* HRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB4B687217423A600C1A336 /* HRNavigationBar.m */; };
 		CEEF0D2C20745A3B00B422F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C5CC3202DA6A80033B8EE /* ViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -262,6 +263,8 @@
 		CEB4B681216AF55D00C1A336 /* ClassModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassModel.h; sourceTree = "<group>"; };
 		CEB4B682216AF55D00C1A336 /* ClassModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassModel.m; sourceTree = "<group>"; };
 		CEB4B684216AFB3100C1A336 /* GreateJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GreateJson.json; sourceTree = "<group>"; };
+		CEB4B686217423A600C1A336 /* HRNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRNavigationBar.h; sourceTree = "<group>"; };
+		CEB4B687217423A600C1A336 /* HRNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRNavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -532,6 +535,8 @@
 		CE35DBA821081EE800176A41 /* HRNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				CEB4B686217423A600C1A336 /* HRNavigationBar.h */,
+				CEB4B687217423A600C1A336 /* HRNavigationBar.m */,
 			);
 			path = HRNavigationBar;
 			sourceTree = "<group>";
@@ -892,6 +897,7 @@
 				CE683CBE214BA66400CF6C57 /* AFImageDownloader.m in Sources */,
 				CE683CC3214BA66400CF6C57 /* AFNetworkReachabilityManager.m in Sources */,
 				CE35DB892105864800176A41 /* HRPayTextField.m in Sources */,
+				CEB4B688217423A600C1A336 /* HRNavigationBar.m in Sources */,
 				CE683CE22152429C00CF6C57 /* NSObject+Additions.m in Sources */,
 				CE35DB752105864800176A41 /* TFImageCropViewController.m in Sources */,
 				CEB4B683216AF55D00C1A336 /* ClassModel.m in Sources */,
