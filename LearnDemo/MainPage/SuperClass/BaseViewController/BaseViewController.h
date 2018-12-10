@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "HRNavigationBar.h"
 @interface BaseViewController : UIViewController
-@property (nonatomic, strong) NSString *navTitle;
 @property (nonatomic,strong)HRNavigationBar * hrNavigationBar;
 @property (nonatomic,strong)UINavigationItem *hrNavigationItem;
 

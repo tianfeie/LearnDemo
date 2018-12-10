@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 
-@interface TFRootCameraViewController : BaseViewController
+@interface TFRootCameraViewController : UIViewController
 
 @end

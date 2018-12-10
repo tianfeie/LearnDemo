@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LearnDemo/MainPage/HRCircularLoanPage/ViewController/HRCircularLoanBillsDetailViewController.m"
-            timestampString = "566123742.420718"
+            timestampString = "566113263.9315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "-hr_circularLoan_billDetailCell:selectedType:"
             landmarkType = "7">
          </BreakpointContent>

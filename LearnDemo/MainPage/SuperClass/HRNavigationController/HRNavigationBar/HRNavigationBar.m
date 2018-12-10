@@ -26,7 +26,7 @@
         
         [self setShadowImage:[[UIImage alloc] init]];
         
-        self.barTintColor = HRNavBarColor;
+        self.barTintColor = [UIColor whiteColor];//HRNavBarColor;
         self.translucent = NO;
         [self addSubview:self.middleView];
         [self insertSubview:self.bgView belowSubview:self.middleView];

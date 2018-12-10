@@ -6,8 +6,8 @@
 //  Copyright © 2018年 huarong. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface HRScaleSlideViewController : BaseViewController
+@interface HRScaleSlideViewController : UIViewController
 
 @end

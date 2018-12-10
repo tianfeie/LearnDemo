@@ -25,8 +25,8 @@
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
     
     [self.view addSubview:self.hrNavigationBar];
-    [self.hrNavigationBar addSubview:self.backButton];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -75,7 +75,7 @@
         _backButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         _backButton.imageEdgeInsets = UIEdgeInsetsMake(10, 5, 10, 0);
         [_backButton setImage:[UIImage imageNamed:@"hr_back_white"] forState:UIControlStateNormal];
-        
+        [self.hrNavigationBar addSubview:_backButton];
         //        self.hrNavigationBar.navItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_backButton];
     }
     return _backButton;
@@ -96,10 +96,7 @@
     return _rightButton;
 }
 
-- (void)setNavTitle:(NSString *)navTitle{
-    _navTitle = navTitle;
-    self.hrNavigationBar.title = _navTitle;
-}
+
 - (void)backButtonClick:(UIButton *)button
 {
     if (self.isPeresntVc) {
@@ -126,8 +123,14 @@
 
 - (void)setHideBackBtn:(BOOL)hideBackBtn
 {
-    _hideBackBtn = hideBackBtn;
-    self.backButton.hidden = hideBackBtn;
+    if (!_hideBackBtn) {
+        _hideBackBtn = hideBackBtn;
+        self.backButton.hidden = hideBackBtn;
+    }
+    else{
+        self.backButton.hidden = YES;
+        
+    }
 }
 
 - (void)setShowRightBtn:(BOOL)showRightBtn
