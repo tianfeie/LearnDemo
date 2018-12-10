@@ -10,6 +10,7 @@
 #import "GreateModel.h"
 #import "ClassModel.h"
 #import "StudentModel.h"
+#import "HRNetworking.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataSource;
@@ -27,6 +28,16 @@
     }else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
+    [self sendRequest];
+
+}
+
+-(void)sendRequest{
+    [HRNetworking POST:@"https://www.xingyeguanjia.com/xwydzf/private/findAds.json" parameters:nil success:^(id responseObject) {
+        NSLog(@"%@",(NSString *)responseObject);
+    } failure:^(NSError *error) {
+        
+    } inSuperView:self.view];
 }
 
 - (void)didReceiveMemoryWarning {

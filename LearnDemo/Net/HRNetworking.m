@@ -9,6 +9,7 @@
 #import "HRNetworking.h"
 #import "AFNetworking.h"
 #import "AFNetworkActivityIndicatorManager.h"
+#import "MBProgressHUD.h"
 static NSMutableArray *_allSessionTask;
 static AFHTTPSessionManager *_sessionManager;
 
@@ -31,6 +32,8 @@ static AFHTTPSessionManager *_sessionManager;
     _sessionManager.requestSerializer = [AFHTTPRequestSerializer serializer];
     _sessionManager.requestSerializer.timeoutInterval = 45.f;
 }
+
+
 + (NSURLSession *)getHttpSession
 {
     return _sessionManager.session;
@@ -91,16 +94,20 @@ static AFHTTPSessionManager *_sessionManager;
     // 添加sessionTask到数组
     sessionTask ? [[self allSessionTask] addObject:sessionTask] : nil ;
     
+    
     return sessionTask;
 }
 
 + (NSURLSessionTask *)POST:(NSString *)URL
                 parameters:(NSDictionary *)parameters
                    success:(HRHttpRequestSuccess)success
-                   failure:(HRHttpRequestFailed)failure {
+                   failure:(HRHttpRequestFailed)failure inSuperView:(UIView *)view{
+    
+     __block MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    HUD.mode = MBProgressHUDModeIndeterminate;
     
     NSDictionary *param = [self addPublicParam:parameters];
-    NSString *newUrl = [NSString stringWithFormat:@"%@/%@",RequestBaseUrl,URL];
+    NSString *newUrl = [NSString stringWithFormat:@"%@%@",RequestBaseUrl,URL];
     
     HRLog(@"\n------------请求地址参数-------------\n地址 == %@\n参数 == %@\n------------*************-------------", newUrl, param);
     NSURLSessionTask *sessionTask = [_sessionManager POST:newUrl parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
@@ -109,13 +116,17 @@ static AFHTTPSessionManager *_sessionManager;
         [[self allSessionTask] removeObject:task];
         HRLog(@"\n------------返回数据-------------\n%@\n------------*************-------------", responseObject);
         success ? success(responseObject) : nil;
-        
+        [HUD setHidden:YES];
+
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [[self allSessionTask] removeObject:task];
         failure ? failure(error) : nil;
+        [HUD setHidden:YES];
     }];
     // 添加最新的sessionTask到数组
     sessionTask ? [[self allSessionTask] addObject:sessionTask] : nil ;
+    
+    
     return sessionTask;
 }
 
