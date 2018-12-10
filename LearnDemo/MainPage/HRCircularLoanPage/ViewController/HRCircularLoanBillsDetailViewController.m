@@ -21,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navTitle = @"账单";
     [self.view addSubview:self.tableView];
     [self getDataSource];
 }

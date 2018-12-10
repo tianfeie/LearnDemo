@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.navTitle = @"刻度尺";
     self.slideView = [ZDSliderPickView sliderProgressViewWithFrame:CGRectMake(0, HR_NAVIGATIONBAR_HEIGHT, HRSCREEN_WIDTH, 150) maxValue:70000 completion:^(NSString *value) {
         NSLog(@"%@",value);
     }];

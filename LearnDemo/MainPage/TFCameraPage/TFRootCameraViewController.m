@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navTitle = @"相机";
     [self initSubViews];
 }
 
