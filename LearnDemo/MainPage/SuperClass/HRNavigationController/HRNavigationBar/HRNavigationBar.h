@@ -11,7 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HRNavigationBar : UINavigationBar
+@property (nonatomic, strong, readonly)UINavigationItem *navItem;
+@property (nonatomic, strong, readonly)UIView *backgroundView;
 
+@property (nonatomic, strong)UIView *titleView;
+@property (nonatomic, copy)NSString *title;
 @end
 
 NS_ASSUME_NONNULL_END

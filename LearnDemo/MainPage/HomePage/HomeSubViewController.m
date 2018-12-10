@@ -17,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.isPeresntVc = YES;
+    self.navTitle = @"首页二级页面";
     self.view.backgroundColor = [UIColor grayColor];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = self.view.bounds;
