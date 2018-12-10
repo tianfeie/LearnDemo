@@ -6,8 +6,8 @@
 //  Copyright © 2018年 huarong. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : BaseViewController
 
 @end

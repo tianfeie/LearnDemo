@@ -9,6 +9,7 @@
 #ifndef HRNomalMacro_h
 #define HRNomalMacro_h
 
+#define HRNavBarColor (HRColorFromRGB(0xce2c2c))        // 导航栏颜色
 #define HRMainWordColor (HRColorFromRGB(0x333333))      // 主要文字颜色
 #define HRSubWordColor (HRColorFromRGB(0x666666))       // 次要文字颜色
 #define HRHintWordColor (HRColorFromRGB(0x999999))      // 提示文字颜色
