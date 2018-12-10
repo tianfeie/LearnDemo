@@ -9,6 +9,7 @@
 #import "HRNetworking.h"
 #import "AFNetworking.h"
 #import "AFNetworkActivityIndicatorManager.h"
+#import "MBProgressHUD.h"
 static NSMutableArray *_allSessionTask;
 static AFHTTPSessionManager *_sessionManager;
 
@@ -97,10 +98,13 @@ static AFHTTPSessionManager *_sessionManager;
 + (NSURLSessionTask *)POST:(NSString *)URL
                 parameters:(NSDictionary *)parameters
                    success:(HRHttpRequestSuccess)success
-                   failure:(HRHttpRequestFailed)failure {
+                   failure:(HRHttpRequestFailed)failure inSuperView:(UIView *)superView{
     
     NSDictionary *param = [self addPublicParam:parameters];
     NSString *newUrl = [NSString stringWithFormat:@"%@/%@",RequestBaseUrl,URL];
+    
+    __block MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:superView animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
     
     HRLog(@"\n------------请求地址参数-------------\n地址 == %@\n参数 == %@\n------------*************-------------", newUrl, param);
     NSURLSessionTask *sessionTask = [_sessionManager POST:newUrl parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
@@ -109,10 +113,11 @@ static AFHTTPSessionManager *_sessionManager;
         [[self allSessionTask] removeObject:task];
         HRLog(@"\n------------返回数据-------------\n%@\n------------*************-------------", responseObject);
         success ? success(responseObject) : nil;
-        
+        [hud setHidden:YES];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [[self allSessionTask] removeObject:task];
         failure ? failure(error) : nil;
+        [hud setHidden:YES];
     }];
     // 添加最新的sessionTask到数组
     sessionTask ? [[self allSessionTask] addObject:sessionTask] : nil ;
@@ -127,6 +132,7 @@ static AFHTTPSessionManager *_sessionManager;
                                progress:(LRHttpProgress)progress
                                 success:(HRHttpRequestSuccess)success
                                 failure:(HRHttpRequestFailed)failure {
+    
     
     NSDictionary *param = [self addPublicParam:parameters];
     NSString *newUrl = [NSString stringWithFormat:@"%@/%@",RequestBaseUrl,URL];

@@ -23,4 +23,8 @@ typedef void(^LRHttpProgress)(NSProgress *progress);
 @interface HRNetworking : NSObject
 + (void)cancelAllRequest;
 + (void)cancelRequestWithURL:(NSString *)URL;
++ (NSURLSessionTask *)POST:(NSString *)URL
+                parameters:(NSDictionary *)parameters
+                   success:(HRHttpRequestSuccess)success
+                   failure:(HRHttpRequestFailed)failure inSuperView:(UIView *)superView;
 @end
