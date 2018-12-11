@@ -14,5 +14,6 @@
 #import "YYModel.h"
 #import "NSString+Utils.h"
 #import "HRGlobalData.h"
+#import "HRNetworking.h"
 
 #endif /* PrefixHeader_pch */

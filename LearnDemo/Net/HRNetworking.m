@@ -101,10 +101,12 @@ static AFHTTPSessionManager *_sessionManager;
                    failure:(HRHttpRequestFailed)failure inSuperView:(UIView *)superView{
     
     NSDictionary *param = [self addPublicParam:parameters];
-    NSString *newUrl = [NSString stringWithFormat:@"%@/%@",RequestBaseUrl,URL];
+    NSString *newUrl = [NSString stringWithFormat:@"%@%@",RequestBaseUrl,URL];
     
     __block MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:superView animated:YES];
     hud.mode = MBProgressHUDModeIndeterminate;
+    hud.label.text = @"加载中...";
+    hud.label.textColor = [UIColor darkGrayColor];
     
     HRLog(@"\n------------请求地址参数-------------\n地址 == %@\n参数 == %@\n------------*************-------------", newUrl, param);
     NSURLSessionTask *sessionTask = [_sessionManager POST:newUrl parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {

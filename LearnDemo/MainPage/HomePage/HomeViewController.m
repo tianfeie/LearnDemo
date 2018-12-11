@@ -23,12 +23,23 @@
     self.dataSource = @[@{@"title":@"自定义相机",@"ViewController":@"TFRootCameraViewController",@"modalType":@"push"},@{@"title":@"支付密码框",@"ViewController":@"TFPayViewController",@"modalType":@"push"},@{@"title":@"刻度尺",@"ViewController":@"HRScaleSlideViewController",@"modalType":@"push"},@{@"title":@"圆弧刻度盘",@"ViewController":@"HomeSubViewController",@"modalType":@"present"},@{@"title":@"账单",@"ViewController":@"HRCircularLoanBillsDetailViewController",@"modalType":@"push"}];
     self.navTitle = @"首页";
     self.hideBackBtn = YES;
+    
     [self.view addSubview:self.tableView];
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;//UIScrollView也适用
     }else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
+    [self sendRequest];
+}
+
+-(void)sendRequest{
+    [HRNetworking POST:@"https://www.baidu.com" parameters:nil success:^(id responseObject) {
+        NSLog(@"%@",(NSString *)responseObject);
+    } failure:^(NSError *error) {
+        
+    } inSuperView:self.view];
+    
 }
 
 - (void)didReceiveMemoryWarning {
