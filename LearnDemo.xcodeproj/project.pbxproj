@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE0797BA20805C2E001D02C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C5CCE202DA6A90033B8EE /* main.m */; };
+		CE2D249D21BF9AD700B8E2EF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2D249921BF9AD700B8E2EF /* MBProgressHUD.m */; };
 		CE35DB642105864800176A41 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DB142105864800176A41 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		CE35DB652105864800176A41 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DB1D2105864800176A41 /* ViewController+MASAdditions.m */; };
 		CE35DB662105864800176A41 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35DB212105864800176A41 /* MASCompositeConstraint.m */; };
@@ -98,6 +99,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2D249921BF9AD700B8E2EF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		CE2D249B21BF9AD700B8E2EF /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		CE35DB132105864800176A41 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		CE35DB142105864800176A41 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		CE35DB152105864800176A41 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -278,9 +281,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE2D249821BF9AD700B8E2EF /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CE2D249B21BF9AD700B8E2EF /* MBProgressHUD.h */,
+				CE2D249921BF9AD700B8E2EF /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		CE35DB112105864800176A41 /* Reference */ = {
 			isa = PBXGroup;
 			children = (
+				CE2D249821BF9AD700B8E2EF /* MBProgressHUD */,
 				CE683CC921523C4800CF6C57 /* YYKit */,
 				CE683C8E214BA66400CF6C57 /* AFNetworking */,
 				CE35DB122105864800176A41 /* Masonry */,
@@ -544,25 +557,9 @@
 		CE47B5ED21129A63006F9D5F /* HRTranition */ = {
 			isa = PBXGroup;
 			children = (
-				CE47B5F221129B71006F9D5F /* Animation */,
 				CE47B5F321129B71006F9D5F /* Category */,
-				CE47B5F121129B71006F9D5F /* Delegate */,
 			);
 			path = HRTranition;
-			sourceTree = "<group>";
-		};
-		CE47B5F121129B71006F9D5F /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Delegate;
-			sourceTree = "<group>";
-		};
-		CE47B5F221129B71006F9D5F /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Animation;
 			sourceTree = "<group>";
 		};
 		CE47B5F321129B71006F9D5F /* Category */ = {
@@ -890,6 +887,7 @@
 				CE683CBD214BA66400CF6C57 /* AFAutoPurgingImageCache.m in Sources */,
 				CE0797BA20805C2E001D02C3 /* main.m in Sources */,
 				CE35DB6C2105864800176A41 /* MASViewConstraint.m in Sources */,
+				CE2D249D21BF9AD700B8E2EF /* MBProgressHUD.m in Sources */,
 				CE683C752138DF7D00CF6C57 /* HRCircularLoanBillsDetailViewController.m in Sources */,
 				CEEF0D2C20745A3B00B422F2 /* ViewController.m in Sources */,
 				CE683CD921523C4800CF6C57 /* YYDiskCache.m in Sources */,
